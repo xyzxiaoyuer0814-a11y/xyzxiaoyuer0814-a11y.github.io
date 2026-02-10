@@ -13,12 +13,12 @@
 
       h1 {
         font-size: 100px;
-        text-align: center;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
         font-weight: 900;
         position: relative;
-        bottom: 70px;
+        bottom: 0px;
         background: linear-gradient(
           45deg,
           white,
@@ -33,21 +33,18 @@
           0 0 42px #ff9933,
           8px -8px 4px #ff6600,
           28px -28px 14px #ff3300,
-          42px -42px 22px #cc2200,
+          42px -42px 22px #cc5500,
           60px -60px 32px #990000,
           -6px 6px 6px #ff9900,
           -12px 14px 10px #ff6600,
           -20px 22px 16px #ff3300;
 
         padding: 100px;
+        border-bottom: solid #cc5500;
       }
 
       section {
         margin: 30px;
-      }
-
-      h2 {
-        color: rgb(149, 0, 255);
       }
 
       img {
@@ -59,14 +56,19 @@
         background: linear-gradient(90deg, #5c5c5c, #333333, #000000);
         color: #ffd500;
         text-align: center;
-        padding: 25px 0;
+        padding-left: 401px;
+        padding-right: 401px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 14px;
         border-top: 3px solid #ff6a00;
+        position: relative;
+        bottom: 0px;
+      }
+      nav {
+        padding: 30px;
       }
 
-      #komponisten h2 {
-        color: black;
-      }
       button {
         border-radius: 10px;
       }
@@ -88,15 +90,88 @@
         );
         margin: 21px;
       }
+      main {
+        margin: 0;
+      }
+
+      br {
+        height: 5px;
+      }
+
+      nav {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(#333, #000, #333);
+        height: 50px;
+      }
+
+      nav a {
+        color: rgb(253, 223, 88);
+        margin: 50px;
+        font-size: 25px;
+        transition: 0.7s;
+      }
+      nav div {
+        background-image: url(https://tse1.mm.bing.net/th/id/OIP.WExqRcYYUkhMvJY390atYQHaEK?pid=Api);
+        width: 50px;
+        height: 50px;
+        border: solid rgb(152, 152, 152) 0.1px;
+        border-radius: 100px;
+        background-size: 65px;
+        position: relative;
+        bottom: 52px;
+        right: 30px;
+
+        margin: 10px;
+      }
+      nav a:hover {
+        color: #f9ff58;
+        text-shadow: #f9ff58 2px 2px 2px;
+      }
+      h2 {
+        color: #8a0d0d;
+      }
+      #famous_pieces a {
+        color: transparent;
+        text-decoration: none;
+        padding: 1rem;
+        transition: 1s;
+
+        background-image: linear-gradient(
+          90deg,
+          hsl(176, 100%, 39%),
+          hsl(295, 100%, 36%)
+        );
+        background-clip: text;
+      }
+      #famous_pieces a:hover {
+        background-image: linear-gradient(
+          90deg,
+          hsl(295, 100%, 36%),
+          hsl(176, 100%, 39%)
+        );
+        color: transparent;
+      }
     
-    br {
-      height: 5px;
-    }
-       
+      audio {
+        border: 100px solid red;
+        color: white;
+        background-color: #fff;
+      }
     </style>
   </head>
 
   <body>
+    <audio id="audio" src="swan_violin_bg.mp3"></audio>
+    <nav>
+      <a href="#note">Noten</a>
+      <a href="#epoche">Epochen</a>
+      <a href="#komponisten">Komponisten</a>
+      <a href="#famous_pieces">Berühmte Stücken</a>
+      <div></div>
+    </nav>
     <main>
       <h1>Musik</h1>
 
@@ -105,14 +180,15 @@
         <div>
           <div>Musik ist die Kunst, Klänge zu ordnen.</div>
           <div>Es besteht aus Tönen, Rhythmen,</div>
+          <div>und Harmonien und begleitet die Menschen seit Jahrtausenden</div>
           <div>
-           und Harmonien und begleitet die Menschen seit Jahrtausenden
+            Es kann Emotionen wie Freude, Traurigkeit oder Anspannung
+            ausdrücken.
           </div>
-          <div>Es kann Emotionen wie Freude, Traurigkeit oder Anspannung ausdrücken.</div>
         </div>
       </section>
 
-      <section class="note">
+      <section id="note">
         <h2>Noten</h2>
         <p>Die Grundtöne: C – D – E – F – G – A – H</p>
 
@@ -121,7 +197,9 @@
           alt=""
         />
 
-        <div>Man kann einen Ton um einen Halbton nach oben oder unten verändern.</div>
+        <div>
+          Man kann einen Ton um einen Halbton nach oben oder unten verändern.
+        </div>
 
         <br />
 
@@ -150,11 +228,10 @@
         <br />
 
         <div>
-        C nach D ist ein Ganztonschritt, also wenn C +# Cis ist (einen Halbton höher),
-
-und D+b Des ist (einen Halbton 
+          C nach D ist ein Ganztonschritt, also wenn C +# Cis ist (einen Halbton
+          höher), und D+b Des ist (einen Halbton
         </div>
-        <div> tiefer), dann ist es der gleiche Ton mit anderen Namen </div>
+        <div>tiefer), dann ist es der gleiche Ton mit anderen Namen</div>
         <div>Cis = Des</div>
         <div>Dis = Es</div>
         <div>Fis = Ges</div>
@@ -163,7 +240,10 @@ und D+b Des ist (einen Halbton
 
         <br />
 
-        <div>Zwischen H–C und E–F tist nur ein Halbton staddt z.B C-D (ein Ganzton).</div>
+        <div>
+          Zwischen H–C und E–F tist nur ein Halbton staddt z.B C-D (ein
+          Ganzton).
+        </div>
         <div>His = C</div>
         <div>Eis = F</div>
         <div>Ces = H</div>
@@ -179,7 +259,7 @@ und D+b Des ist (einen Halbton
         <table border>
           <tr>
             <td>Prime</td>
-            <td>1 Schritt </td>
+            <td>1 Schritt</td>
             <td>C-C</td>
           </tr>
 
@@ -227,332 +307,241 @@ und D+b Des ist (einen Halbton
         </table>
         <div>Das waren alle grundlegenden Intervalle.</div>
         <br />
-        
-        
-        
+
         <div>Es gibt aber auch noch genauere Intervalle</div>
         <p>Klein/Groß</p>
-     
+
         <div>Kleine Sekunde: C-Des</div>
-        <div>Große Sekunde: C-D</div><br>
+        <div>Große Sekunde: C-D</div>
+        <br />
         <div>kleine terz: C-Es</div>
-        
-        <div>Große Terz: C-E</div><br>
-        <div>kleine Sexte: C-As  </div>
-        <div>Große Sexte: C-A</div><br>
-      <div>Kleine Septime: C-B</div>
-      <div>Große Septime: C-H</div>
-     
-      <p>Vermindert/Rein/Übermäßig</p>
-    <div>Verminderte Prime: C-Ces</div>
-    <div>Reine Prime: C-C</div>
-    <div>Übermäßige Prime: C-Cis</div>
-    <br>
-     <div>Verminderte Quarte: C-Fes</div>
-    <div>Reine Quarte: C-F</div>
-    <div>Übermäßige Prime: C-Fis</div>
-    <br>
-     <div>Verminderte Quinte: C-Ges</div>
-    <div>Reine Quinte: C-G</div>
-    <div>Übermäßige Quinte: C-Gis</div>
-    <br>
-     <div>Verminderte Oktave: C-Ces²</div>
-    <div>Reine Oktave: C-C<²/div>
-    <div>Übermäßige Oktave: C-Cis²</div>
 
-    
-    </section>
+        <div>Große Terz: C-E</div>
+        <br />
+        <div>kleine Sexte: C-As</div>
+        <div>Große Sexte: C-A</div>
+        <br />
+        <div>Kleine Septime: C-B</div>
+        <div>Große Septime: C-H</div>
 
-     <section id="epoche">
-  <h2>EPOCHE</h2>
+        <p>Vermindert/Rein/Übermäßig</p>
+        <div>Verminderte Prime: C-Ces</div>
+        <div>Reine Prime: C-C</div>
+        <div>Übermäßige Prime: C-Cis</div>
+        <br />
+        <div>Verminderte Quarte: C-Fes</div>
+        <div>Reine Quarte: C-F</div>
+        <div>Übermäßige Prime: C-Fis</div>
+        <br />
+        <div>Verminderte Quinte: C-Ges</div>
+        <div>Reine Quinte: C-G</div>
+        <div>Übermäßige Quinte: C-Gis</div>
+        <br />
+        <div>Verminderte Oktave: C-Ces²</div>
+        <div>Reine Oktave: C-C²</div>
+        <div>Übermäßige Oktave: C-Cis²</div>
+      </section>
 
-  <h3>Renaissance (ca. 1400–1600)</h3>
-  <div>Entstehung der Mehrstimmigkeit.</div>
-  <div>Polyphone und anspruchsvolle Musik.</div>
-  <div>Kirchenmusik und weltliche Lieder.</div>
+      <section id="epoche">
+        <h2>EPOCHE</h2>
 
-  <h3>Barock (ca. 1600–1750)</h3>
-  <div>Stark verzierte Melodien.</div>
-  <div>Formen wie Fuge, Oper und Concerto grosso.</div>
-  <div>Ausdruck von Emotionen und Kontrasten.</div>
+        <h3>Renaissance (ca. 1400–1600)</h3>
+        <div>Entstehung der Mehrstimmigkeit.</div>
+        <div>Polyphone und anspruchsvolle Musik.</div>
+        <div>Kirchenmusik und weltliche Lieder.</div>
 
-  <h3>Klassik (ca. 1750–1820)</h3>
-  <div>Klare Formen und Harmonie.</div>
-  <div>Sinfonie, Sonate, Konzert.</div>
-  <div>Ausgewogenheit und Struktur.</div>
+        <h3>Barock (ca. 1600–1750)</h3>
+        <div>Stark verzierte Melodien.</div>
+        <div>Formen wie Fuge, Oper und Concerto grosso.</div>
+        <div>Ausdruck von Emotionen und Kontrasten.</div>
 
-  <h3>Romantik (ca. 1820–1900)</h3>
-  <div>Gefühl und Fantasie.</div>
-  <div>Große Orchester und Liederzyklen.</div>
-  <div>Persönlicher Ausdruck.</div>
+        <h3>Klassik (ca. 1750–1820)</h3>
+        <div>Klare Formen und Harmonie.</div>
+        <div>Sinfonie, Sonate, Konzert.</div>
+        <div>Ausgewogenheit und Struktur.</div>
 
-  <h3>Impressionismus (ca. 1890–1920)</h3>
-  <div>Klangfarben und Stimmungen.</div>
-  <div>Schwebende Harmonien.</div>
+        <h3>Romantik (ca. 1820–1900)</h3>
+        <div>Gefühl und Fantasie.</div>
+        <div>Große Orchester und Liederzyklen.</div>
+        <div>Persönlicher Ausdruck.</div>
 
-  <h3>Moderne (ab ca. 1900)</h3>
-  <div>Auflösung traditioneller Regeln.</div>
-  <div>Neue Klangexperimente.</div>
-</section>
+        <h3>Impressionismus (ca. 1890–1920)</h3>
+        <div>Klangfarben und Stimmungen.</div>
+        <div>Schwebende Harmonien.</div>
 
+        <h3>Moderne (ab ca. 1900)</h3>
+        <div>Auflösung traditioneller Regeln.</div>
+        <div>Neue Klangexperimente.</div>
+      </section>
 
       <section id="komponisten">
-        <h2 class="h2">COMPOSERS</h2>
+        <h2 class="h2">KOMPONISTEN</h2>
 
-        <h2>Baroque</h2>
-        <h3>Antonio Vivaldi (1678–1741)</h3>
-        <div>Antonio Vivaldi was an Italian Baroque composer.</div>
-        <div>He was a violinist, teacher, and priest.</div>
-        <div>He wrote numerous violin concertos.</div>
-        <div>The Four Seasons are his most famous works.</div>
+        <div class="komponisten_barock">
+          <h2>Barock</h2>
+          <h3>Antonio Vivaldi (1678–1741)</h3>
+          <div>Antonio Vivaldi war ein italienischer Barockkomponist.</div>
+          <div>Er war Geiger, Lehrer und Priester.</div>
+          <div>Er schrieb zahlreiche Violinkonzerte.</div>
+          <div>Die Vier Jahreszeiten sind seine bekanntesten Werke.</div>
 
-        <h3>Johann Sebastian Bach (1685–1750)</h3>
-        <div>Johann Sebastian Bach was a German Baroque composer.</div>
-        <div>He is considered a master of polyphony and fugue composition.</div>
-        <div>His music combines mathematical order with deep expression.</div>
-        <div>Many of his works remain central to music history.</div>
-
-        <h3>George Frideric Handel (1685–1759)</h3>
-        <div>George Frideric Handel was a German-British composer.</div>
-        <div>He composed operas, oratorios, and instrumental music.</div>
-        <div>His music is festive and powerful.</div>
-        <div>Messiah is one of his most famous works.</div>
-
-        <h2>Classical</h2>
-        <h3>Joseph Haydn (1732–1809)</h3>
-        <div>
-          Joseph Haydn was an Austrian composer of the Viennese Classical
-          period.
+          <h3>Johann Sebastian Bach (1685–1750)</h3>
+          <div>Johann Sebastian Bach war ein deutscher Barockkomponist.</div>
+          <div>
+            Er gilt als Meister der Polyphonie und der Fugenkomposition.
+          </div>
+          <div>
+            Seine Musik verbindet mathematische Ordnung mit tiefem Ausdruck.
+          </div>
+          <div>
+            Viele seiner Werke sind bis heute zentral für die Musikgeschichte.
+          </div>
+          <h3>George Frideric Handel (1685–1759)</h3>
+          <div>
+            George Frideric Handel war ein deutsch-britischer Komponist.
+          </div>
+          <div>Er komponierte Opern, Oratorien und Instrumentalmusik.</div>
+          <div>Seine Musik ist festlich und kraftvoll.</div>
+          <div>Der Messias ist eines seiner bekanntesten Werke.</div>
         </div>
-        <div>He significantly developed the symphony and string quartet.</div>
-        <div>
-          His style is clearly structured, balanced, and often humorous.
+        <div class="komponisten_klassik">
+          <h2>Klassik</h2>
+          <h3>Joseph Haydn (1732–1809)</h3>
+          <div>
+            Joseph Haydn war ein österreichischer Komponist der Wiener Klassik.
+          </div>
+          <div>
+            Er entwickelte die Sinfonie und das Streichquartett maßgeblich
+            weiter.
+          </div>
+          <div>
+            Sein Stil ist klar strukturiert, ausgewogen und oft humorvoll.
+          </div>
+          <div>Haydn beeinflusste Mozart und Beethoven stark.</div>
+
+          <h3>Wolfgang Amadeus Mozart (1756–1791)</h3>
+          <div>Mozart war ein musikalisches Genie der Wiener Klassik.</div>
+          <div>
+            Er komponierte Opern, Sinfonien, Kammermusik und Klavierwerke.
+          </div>
+          <div>Seine Musik verbindet Leichtigkeit mit großer Tiefe.</div>
+          <div>Viele seiner Werke gelten als vollkommen gestaltet.</div>
+
+          <h3>Ludwig van Beethoven (1770–1827)</h3>
+          <div>Beethoven war ein deutscher Komponist und Pianist.</div>
+          <div>Er bildete die Brücke zwischen Klassik und Romantik.</div>
+          <div>Seine Musik ist kraftvoll, emotional und oft dramatisch.</div>
+          <div>
+            Er veränderte die Musik dauerhaft und revolutionierte die Sinfonie.
+          </div>
         </div>
-        <div>Haydn strongly influenced Mozart and Beethoven.</div>
+        <div class="komponisten_Romantik">
+          <h2>Romantik</h2>
+          <h3>Franz Schubert (1797–1828)</h3>
+          <div>
+            Franz Schubert war ein österreichischer Komponist der Romantik.
+          </div>
+          <div>Er ist besonders für seine Lieder und Liederzyklen bekannt.</div>
+          <div>Seine Musik ist lyrisch, persönlich und emotional.</div>
+          <div>
+            Schubert verband einfache Melodik mit großer Ausdruckskraft.
+          </div>
 
-        <h3>Wolfgang Amadeus Mozart (1756–1791)</h3>
-        <div>Mozart was a musical genius of the Viennese Classical era.</div>
-        <div>
-          He composed operas, symphonies, chamber music, and piano works.
+          <h3>Felix Mendelssohn Bartholdy (1809–1847)</h3>
+          <div>Felix Mendelssohn war ein deutscher romantischer Komponist.</div>
+          <div>Er verband klassische Formen mit romantischem Ausdruck.</div>
+          <div>Er war außerdem ein bedeutender Dirigent.</div>
+          <div>Seine Musik ist klar, elegant und ausdrucksstark.</div>
+
+          <h3>Frédéric Chopin (1810–1849)</h3>
+          <div>Chopin war ein polnischer Komponist der Romantik.</div>
+          <div>Er schrieb fast ausschließlich für Klavier.</div>
+          <div>Sein Stil ist lyrisch, virtuos und emotional.</div>
+          <div>Er prägte die Klaviermusik wie kaum ein anderer Komponist.</div>
+
+          <h3>Robert Schumann (1810–1856)</h3>
+          <div>Robert Schumann war ein deutscher romantischer Komponist.</div>
+          <div>Seine Musik spiegelt starke innere Gefühle wider.</div>
+          <div>Er komponierte Klavierwerke, Lieder und Sinfonien.</div>
+          <div>
+            Schumann verband Literatur und Musik auf einzigartige Weise.
+          </div>
+
+          <h3>Franz Liszt (1811–1886)</h3>
+          <div>
+            Franz Liszt war ein ungarischer Komponist und Klaviervirtuose.
+          </div>
+          <div>Er war berühmt für seine außergewöhnliche Technik.</div>
+          <div>Liszt entwickelte die sinfonische Dichtung.</div>
+          <div>
+            Seine Werke sind technisch und musikalisch sehr anspruchsvoll.
+          </div>
+
+          <h3>Johannes Brahms (1833–1897)</h3>
+          <div>Johannes Brahms war ein deutscher romantischer Komponist.</div>
+          <div>Er verband klassische Formen mit romantischer Tiefe.</div>
+          <div>Er schrieb Sinfonien, Kammermusik und Klavierwerke.</div>
+          <div>
+            Brahms ist einer der bedeutendsten Komponisten des 19. Jahrhunderts.
+          </div>
+
+          <h3>Pjotr Iljitsch Tschaikowski (1840–1893)</h3>
+          <div>Tschaikowski war ein russischer Komponist der Romantik.</div>
+          <div>Er schrieb Sinfonien, Ballette und Konzerte.</div>
+          <div>Seine Musik ist stark emotional.</div>
+          <div>Schwanensee und Der Nussknacker sind weltberühmt.</div>
         </div>
-        <div>His music combines lightness with great depth.</div>
-        <div>Many of his works are considered perfectly crafted.</div>
 
-        <h3>Ludwig van Beethoven (1770–1827)</h3>
-        <div>Beethoven was a German composer and pianist.</div>
-        <div>He bridged the Classical and Romantic eras.</div>
-        <div>His music is powerful, emotional, and often dramatic.</div>
-        <div>He permanently changed music and revolutionized the symphony.</div>
+        <div class="komponisten_spätromantik">
+          <h2>Spätromantik</h2>
+          <h3>Richard Wagner (1813–1883)</h3>
+          <div>
+            Richard Wagner war ein deutscher Komponist der Spätromantik.
+          </div>
+          <div>Er reformierte die Oper grundlegend.</div>
+          <div>Seine Werke sind als Musikdramen konzipiert.</div>
+          <div>
+            Der Ring des Nibelungen ist eines seiner bekanntesten Werke.
+          </div>
 
-        <h2>Romantic</h2>
-        <h3>Franz Schubert (1797–1828)</h3>
-        <div>Franz Schubert was an Austrian Romantic composer.</div>
-        <div>He is especially known for his songs and song cycles.</div>
-        <div>His music is lyrical, personal, and emotional.</div>
-        <div>Schubert combined simple melody with great expressive power.</div>
+          <h3>Richard Strauss (1864–1949)</h3>
+          <div>
+            Richard Strauss war ein deutscher Komponist der Spätromantik.
+          </div>
+          <div>Er schrieb sinfonische Dichtungen und Opern.</div>
+          <div>Seine Musik verwendet sehr große Orchester.</div>
+          <div>Er hatte großen Einfluss auf die moderne Musik.</div>
 
-        <h3>Felix Mendelssohn Bartholdy (1809–1847)</h3>
-        <div>Felix Mendelssohn was a German Romantic composer.</div>
-        <div>He combined classical forms with romantic expression.</div>
-        <div>He was also an important conductor.</div>
-        <div>His music is clear, elegant, and expressive.</div>
+          <h3>Sergei Rachmaninow (1873–1943)</h3>
+          <div>
+            Sergei Rachmaninow war ein russischer Komponist und Pianist.
+          </div>
+          <div>Seine Musik gehört zur Spätromantik.</div>
+          <div>Er schrieb berühmte Klavierkonzerte und Sinfonien.</div>
+          <div>Sein Stil ist emotional, kraftvoll und hoch ausdrucksstark.</div>
 
-        <h3>Frédéric Chopin (1810–1849)</h3>
-        <div>Chopin was a Polish Romantic composer.</div>
-        <div>He wrote almost exclusively for piano.</div>
-        <div>His style is lyrical, virtuosic, and emotional.</div>
-        <div>He shaped piano music like hardly any other composer.</div>
-
-        <h3>Robert Schumann (1810–1856)</h3>
-        <div>Robert Schumann was a German Romantic composer.</div>
-        <div>His music reflects strong inner emotions.</div>
-        <div>He composed piano works, songs, and symphonies.</div>
-        <div>Schumann uniquely connected literature and music.</div>
-
-        <h3>Franz Liszt (1811–1886)</h3>
-        <div>Franz Liszt was a Hungarian composer and piano virtuoso.</div>
-        <div>He was famous for his extraordinary technique.</div>
-        <div>Liszt developed the symphonic poem.</div>
-        <div>His works are technically and musically very demanding.</div>
-
-        <h3>Johannes Brahms (1833–1897)</h3>
-        <div>Johannes Brahms was a German Romantic composer.</div>
-        <div>He combined classical forms with romantic depth.</div>
-        <div>He wrote symphonies, chamber music, and piano works.</div>
-        <div>
-          Brahms is one of the most important composers of the 19th century.
+          <h2>Impressionismus</h2>
+          <h3>Claude Debussy (1862–1918)</h3>
+          <div>Claude Debussy war ein französischer Komponist.</div>
+          <div>
+            Er gilt als Hauptvertreter des musikalischen Impressionismus.
+          </div>
+          <div>
+            Seine Musik legt großen Wert auf Klangfarben und Stimmungen.
+          </div>
+          <div>Debussy löste sich bewusst von klassischen Harmonien.</div>
         </div>
-
-        <h3>Pyotr Ilyich Tchaikovsky (1840–1893)</h3>
-        <div>Tchaikovsky was a Russian Romantic composer.</div>
-        <div>He wrote symphonies, ballets, and concertos.</div>
-        <div>His music is highly emotional.</div>
-        <div>Swan Lake and The Nutcracker are world famous.</div>
-
-        <h2>Late Romanticism</h2>
-        <h3>Richard Wagner (1813–1883)</h3>
-        <div>Richard Wagner was a German late Romantic composer.</div>
-        <div>He fundamentally reformed opera.</div>
-        <div>His works are conceived as music dramas.</div>
-        <div>The Ring of the Nibelung is one of his most famous works.</div>
-
-        <h3>Richard Strauss (1864–1949)</h3>
-        <div>Richard Strauss was a German late Romantic composer.</div>
-        <div>He wrote symphonic poems and operas.</div>
-        <div>His music uses very large orchestras.</div>
-        <div>He had great influence on modern music.</div>
-
-        <h3>Sergei Rachmaninoff (1873–1943)</h3>
-        <div>Sergei Rachmaninoff was a Russian composer and pianist.</div>
-        <div>His music belongs to late Romanticism.</div>
-        <div>He wrote famous piano concertos and symphonies.</div>
-        <div>His style is emotional, powerful, and highly expressive.</div>
-
-        <h3>Nikolai Medtner (1880–1951)</h3>
-        <div>Nikolai Medtner was a Russian composer and pianist.</div>
-        <div>He mainly wrote piano music.</div>
-        <div>His style is late Romantic and complex.</div>
-        <div>He is considered an important piano composer.</div>
-
-        <h2>Impressionism</h2>
-        <h3>Claude Debussy (1862–1918)</h3>
-        <div>Claude Debussy was a French composer.</div>
-        <div>
-          He is considered the main representative of musical impressionism.
-        </div>
-        <div>His music strongly focuses on tone colors and atmospheres.</div>
-        <div>Debussy consciously broke away from classical harmonies.</div>
       </section>
-<section id="komponisten">
-  <h2 class="h2">KOMPONISTEN</h2>
 
-  <h2>Barock</h2>
-  <h3>Antonio Vivaldi (1678–1741)</h3>
-  <div>Antonio Vivaldi war ein italienischer Barockkomponist.</div>
-  <div>Er war Geiger, Lehrer und Priester.</div>
-  <div>Er schrieb zahlreiche Violinkonzerte.</div>
-  <div>Die Vier Jahreszeiten sind seine bekanntesten Werke.</div>
-
-  <h3>Johann Sebastian Bach (1685–1750)</h3>
-  <div>Johann Sebastian Bach war ein deutscher Barockkomponist.</div>
-  <div>Er gilt als Meister der Polyphonie und der Fugenkomposition.</div>
-  <div>Seine Musik verbindet mathematische Ordnung mit tiefem Ausdruck.</div>
-  <div>Viele seiner Werke sind bis heute zentral für die Musikgeschichte.</div>
-
-  <h3>George Frideric Handel (1685–1759)</h3>
-  <div>George Frideric Handel war ein deutsch-britischer Komponist.</div>
-  <div>Er komponierte Opern, Oratorien und Instrumentalmusik.</div>
-  <div>Seine Musik ist festlich und kraftvoll.</div>
-  <div>Der Messias ist eines seiner bekanntesten Werke.</div>
-
-  <h2>Klassik</h2>
-  <h3>Joseph Haydn (1732–1809)</h3>
-  <div>
-    Joseph Haydn war ein österreichischer Komponist der Wiener Klassik.
-  </div>
-  <div>Er entwickelte die Sinfonie und das Streichquartett maßgeblich weiter.</div>
-  <div>
-    Sein Stil ist klar strukturiert, ausgewogen und oft humorvoll.
-  </div>
-  <div>Haydn beeinflusste Mozart und Beethoven stark.</div>
-
-  <h3>Wolfgang Amadeus Mozart (1756–1791)</h3>
-  <div>Mozart war ein musikalisches Genie der Wiener Klassik.</div>
-  <div>
-    Er komponierte Opern, Sinfonien, Kammermusik und Klavierwerke.
-  </div>
-  <div>Seine Musik verbindet Leichtigkeit mit großer Tiefe.</div>
-  <div>Viele seiner Werke gelten als vollkommen gestaltet.</div>
-
-  <h3>Ludwig van Beethoven (1770–1827)</h3>
-  <div>Beethoven war ein deutscher Komponist und Pianist.</div>
-  <div>Er bildete die Brücke zwischen Klassik und Romantik.</div>
-  <div>Seine Musik ist kraftvoll, emotional und oft dramatisch.</div>
-  <div>Er veränderte die Musik dauerhaft und revolutionierte die Sinfonie.</div>
-
-  <h2>Romantik</h2>
-  <h3>Franz Schubert (1797–1828)</h3>
-  <div>Franz Schubert war ein österreichischer Komponist der Romantik.</div>
-  <div>Er ist besonders für seine Lieder und Liederzyklen bekannt.</div>
-  <div>Seine Musik ist lyrisch, persönlich und emotional.</div>
-  <div>Schubert verband einfache Melodik mit großer Ausdruckskraft.</div>
-
-  <h3>Felix Mendelssohn Bartholdy (1809–1847)</h3>
-  <div>Felix Mendelssohn war ein deutscher romantischer Komponist.</div>
-  <div>Er verband klassische Formen mit romantischem Ausdruck.</div>
-  <div>Er war außerdem ein bedeutender Dirigent.</div>
-  <div>Seine Musik ist klar, elegant und ausdrucksstark.</div>
-
-  <h3>Frédéric Chopin (1810–1849)</h3>
-  <div>Chopin war ein polnischer Komponist der Romantik.</div>
-  <div>Er schrieb fast ausschließlich für Klavier.</div>
-  <div>Sein Stil ist lyrisch, virtuos und emotional.</div>
-  <div>Er prägte die Klaviermusik wie kaum ein anderer Komponist.</div>
-
-  <h3>Robert Schumann (1810–1856)</h3>
-  <div>Robert Schumann war ein deutscher romantischer Komponist.</div>
-  <div>Seine Musik spiegelt starke innere Gefühle wider.</div>
-  <div>Er komponierte Klavierwerke, Lieder und Sinfonien.</div>
-  <div>Schumann verband Literatur und Musik auf einzigartige Weise.</div>
-
-  <h3>Franz Liszt (1811–1886)</h3>
-  <div>Franz Liszt war ein ungarischer Komponist und Klaviervirtuose.</div>
-  <div>Er war berühmt für seine außergewöhnliche Technik.</div>
-  <div>Liszt entwickelte die sinfonische Dichtung.</div>
-  <div>Seine Werke sind technisch und musikalisch sehr anspruchsvoll.</div>
-
-  <h3>Johannes Brahms (1833–1897)</h3>
-  <div>Johannes Brahms war ein deutscher romantischer Komponist.</div>
-  <div>Er verband klassische Formen mit romantischer Tiefe.</div>
-  <div>Er schrieb Sinfonien, Kammermusik und Klavierwerke.</div>
-  <div>
-    Brahms ist einer der bedeutendsten Komponisten des 19. Jahrhunderts.
-  </div>
-
-  <h3>Pjotr Iljitsch Tschaikowski (1840–1893)</h3>
-  <div>Tschaikowski war ein russischer Komponist der Romantik.</div>
-  <div>Er schrieb Sinfonien, Ballette und Konzerte.</div>
-  <div>Seine Musik ist stark emotional.</div>
-  <div>Schwanensee und Der Nussknacker sind weltberühmt.</div>
-
-  <h2>Spätromantik</h2>
-  <h3>Richard Wagner (1813–1883)</h3>
-  <div>Richard Wagner war ein deutscher Komponist der Spätromantik.</div>
-  <div>Er reformierte die Oper grundlegend.</div>
-  <div>Seine Werke sind als Musikdramen konzipiert.</div>
-  <div>Der Ring des Nibelungen ist eines seiner bekanntesten Werke.</div>
-
-  <h3>Richard Strauss (1864–1949)</h3>
-  <div>Richard Strauss war ein deutscher Komponist der Spätromantik.</div>
-  <div>Er schrieb sinfonische Dichtungen und Opern.</div>
-  <div>Seine Musik verwendet sehr große Orchester.</div>
-  <div>Er hatte großen Einfluss auf die moderne Musik.</div>
-
-  <h3>Sergei Rachmaninow (1873–1943)</h3>
-  <div>Sergei Rachmaninow war ein russischer Komponist und Pianist.</div>
-  <div>Seine Musik gehört zur Spätromantik.</div>
-  <div>Er schrieb berühmte Klavierkonzerte und Sinfonien.</div>
-  <div>Sein Stil ist emotional, kraftvoll und hoch ausdrucksstark.</div>
-
-  
-
-  <h2>Impressionismus</h2>
-  <h3>Claude Debussy (1862–1918)</h3>
-  <div>Claude Debussy war ein französischer Komponist.</div>
-  <div>
-    Er gilt als Hauptvertreter des musikalischen Impressionismus.
-  </div>
-  <div>Seine Musik legt großen Wert auf Klangfarben und Stimmungen.</div>
-  <div>Debussy löste sich bewusst von klassischen Harmonien.</div>
-</section>
-
-      <section id="famous pieces">
+      <section id="famous_pieces">
         <h2>Berühmte Stücke</h2>
         <h3>Johann Sebastian Bach</h3>
         <ul>
-         
           <li>
-            <a href="https://youtu.be/gVah1cr3pU0">Das Wohltemperierte Klavier Nr. 1</a> Level (Prälude: 4 Fugue 9 )
+            <a href="https://youtu.be/gVah1cr3pU0"
+              >Das Wohltemperierte Klavier Nr. 1</a
+            >
+            Level (Prälude: 4 Fugue 9 )
           </li>
           <li>
             <a href="https://youtu.be/zWjDPRSTRa0?si=3M1fG-u_9cqP5jIn"
@@ -561,17 +550,22 @@ und D+b Des ist (einen Halbton
             Level (Prälude: 7 Fugue 9 )
           </li>
           <li>
-            <a href="https://youtu.be/INfgHUn-y0I"> Das Wohltemperierte Klavier Nr. 3</a> Level (Prälude: 8 Fugue 9 )
+            <a href="https://youtu.be/INfgHUn-y0I">
+              Das Wohltemperierte Klavier Nr. 3</a
+            >
+            Level (Prälude: 8 Fugue 9 )
           </li>
           <li>
             <a href="https://youtu.be/o3aI7Oo3GMo?si=rwDtSEjp_J_NNDfk"
               >Toccata and Fugue BWV 565</a
-            >   level 7
+            >
+            level 7
           </li>
           <li>
             <a href="https://youtu.be/ghTitIMtTCM?si=DZJkT6ErSDRtW35q"
               >Italian Concerto BWV 971</a
-            > Level 7
+            >
+            Level 7
           </li>
         </ul>
 
@@ -585,7 +579,7 @@ und D+b Des ist (einen Halbton
           <li>
             <a href="https://youtu.be/4591dCHe_sE?si=VB1ppB8JGFLtj20E"
               >Mondschein
-            </a>  
+            </a>
             – level 9
           </li>
           <li>
@@ -606,7 +600,8 @@ und D+b Des ist (einen Halbton
           <li>
             <a href="https://youtu.be/5q72vXcAW0o?si=_QJcpxEmnLNS5twW"
               >Waldstein" Piano Sonata Nr. 21</a
-            >  Level 10
+            >
+            Level 10
           </li>
         </ul>
 
@@ -631,17 +626,31 @@ und D+b Des ist (einen Halbton
           <li>
             <a href="https://youtu.be/FZ1mj9IaczQ">Sonate KV 331</a> – level 6
           </li>
-     
+
           <li>
             <a href="https://youtu.be/oTS1fohQNec?si=IyniUCco9Q4ekI9v"
               >Sonate KV 333</a
             >
             – level 7
           </li>
-          <li><a href="https://youtu.be/k1-TrAvp_xs?si=J6ApbymJQU15yZUE">Lacrimosa</a></li>
-     
-          <li><a href="https://youtu.be/VIItKRaP2vc?si=uPirMgcl936pWh69">KV448 </a> level 8</li>
-          <li><a href="https://youtu.be/nNeXg_JQnpA?si=QTkpKDFUQkqgXiSG">Fantasia d-minor K397 385g </a> level 7</li>
+          <li>
+            <a href="https://youtu.be/k1-TrAvp_xs?si=J6ApbymJQU15yZUE"
+              >Lacrimosa</a
+            >
+          </li>
+
+          <li>
+            <a href="https://youtu.be/VIItKRaP2vc?si=uPirMgcl936pWh69"
+              >KV448
+            </a>
+            level 8
+          </li>
+          <li>
+            <a href="https://youtu.be/nNeXg_JQnpA?si=QTkpKDFUQkqgXiSG"
+              >Fantasia d-minor K397 385g
+            </a>
+            level 7
+          </li>
         </ul>
 
         <h3>Frédéric Chopin</h3>
@@ -707,7 +716,6 @@ und D+b Des ist (einen Halbton
             <a href="https://youtu.be/6oGEN7oS2z4">Hungarian Rhapsody Nr. 2</a>
             – level 10
           </li>
-         
         </ul>
 
         <h3>Franz Schubert</h3>
@@ -724,13 +732,13 @@ und D+b Des ist (einen Halbton
           <li>
             <a href="https://youtu.be/_OxsFdxmbso">Impromptu Nr. 4</a> – level 8
           </li>
-         
+
           <li>
             <a href="https://youtu.be/OHkot1TmvZU?si=2uksWaIuQjEbH3M0"
               >Symphonie Nr.5</a
             >
           </li>
-          
+
           <li>
             <a href="https://youtu.be/1FzP9LN-Q7s?si=qKvhA9knMue5Ek-a"
               >Sonate Nr.20</a
@@ -743,7 +751,6 @@ und D+b Des ist (einen Halbton
               >Sonate Nr.21 – level 9</a
             >
           </li>
-         
         </ul>
 
         <h3>Claude Debussy</h3>
@@ -765,12 +772,14 @@ und D+b Des ist (einen Halbton
           <li>
             <a href="https://youtu.be/AVGQSKXcfFY"
               >Nikolai Rimsky-Korsakow – Hummelflug (schnell)</a
-            > Level 9
+            >
+            Level 9
           </li>
           <li>
             <a href="https://youtu.be/d8YwOM7gKZs"
-              >Nikolai Rimsky-Korsakow –  (normal)</a
-            > Level 9
+              >Nikolai Rimsky-Korsakow – (normal)</a
+            >
+            Level 9
           </li>
           <li>
             <a href="https://youtu.be/4rgSzQwe5DQ"
@@ -799,8 +808,7 @@ und D+b Des ist (einen Halbton
             – level 7
           </li>
           <li>
-            <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n"
-              ></a
+            <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n"></a
             >Johann Strauss: Die schöne blaue Donau
           </li>
           <li>
@@ -821,5 +829,60 @@ und D+b Des ist (einen Halbton
     <footer>
       <p>copyright &copy; ManGo 2026</p>
     </footer>
+    <script>
+      const audio = document.querySelector("#audio");
+
+      // Startwerte
+      audio.volume = 0; // für Fade-In
+      let targetVolume = 0.6; // maximale Lautstärke
+      let isStarted = false;
+
+      // 🎵 Start bei CLICK (Browser-sicher)
+      document.addEventListener(
+        "click",
+        () => {
+          if (isStarted) return;
+          isStarted = true;
+
+          audio.play();
+          fadeIn();
+        },
+        { once: true },
+      );
+
+      // 🎼 Sanftes Fade-In
+      function fadeIn() {
+        let v = 0;
+        const fade = setInterval(() => {
+          v += 0.01;
+          audio.volume = Math.min(v, targetVolume);
+          if (v >= targetVolume) clearInterval(fade);
+        }, 50);
+      }
+
+      // 🎚️ Lautstärke mit Scroll steuern
+      document.addEventListener("wheel", (e) => {
+        if (!isStarted) return;
+
+        if (e.deltaY < 0) {
+          // scroll up → lauter
+          targetVolume = Math.min(targetVolume + 0.01, 1);
+        } else {
+          // scroll down → leiser
+          targetVolume = Math.max(targetVolume - 0.01, 0.01);
+        }
+
+        audio.volume = targetVolume;
+      });
+
+      // 👀 Pause wenn Tab nicht sichtbar
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+          audio.pause();
+        } else if (isStarted) {
+          audio.play();
+        }
+      });
+    </script>
   </body>
 </html>
