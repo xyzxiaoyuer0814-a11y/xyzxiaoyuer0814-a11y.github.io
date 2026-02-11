@@ -103,7 +103,7 @@
         z-index: 100;
         top: 0;
         width: 100%;
-        background: linear-gradient(#333, #000, #333);
+        background: linear-gradient(#8d0000, #000, #690000);
         height: 50px;
       }
 
@@ -133,34 +133,37 @@
       h2 {
         color: #8a0d0d;
       }
-      #famous_pieces a {
-        color: transparent;
-        text-decoration: none;
-        padding: 1rem;
-        transition: 1s;
+#famous_pieces a {
+  color: transparent;
+  text-decoration: none;
+  padding: 1rem;
 
-        background-image: linear-gradient(
-          90deg,
-          hsl(176, 100%, 39%),
-          hsl(295, 100%, 36%)
-        );
-        background-clip: text;
-      }
-      #famous_pieces a:hover {
-        background-image: linear-gradient(
-          90deg,
-          hsl(295, 100%, 36%),
-          hsl(176, 100%, 39%)
-        );
-        color: transparent;
-      }
+  background-image: linear-gradient(
+    90deg,
+    hsl(176, 100%, 39%),
+    hsl(295, 100%, 36%),
+    hsl(176, 100%, 39%)
+  );
+
+  background-size: 200% 100%;
+  background-position: left;
+  background-clip: text;
+
+  transition: background-position 0.75s;
+}
+
+#famous_pieces a:hover {
+  background-position: right;
+}
+
     
       audio {
         border: 100px solid red;
         color: white;
         background-color: #fff;
       }
-    </style>
+   
+   </style>
   </head>
 
   <body>
@@ -175,17 +178,37 @@
     <main>
       <h1>Musik</h1>
 
-      <section>
-        <h2>Was ist Musik</h2>
-        <div>
-          <div>Musik ist die Kunst, Klänge zu ordnen.</div>
-          <div>Es besteht aus Tönen, Rhythmen,</div>
-          <div>und Harmonien und begleitet die Menschen seit Jahrtausenden</div>
-          <div>
-            Es kann Emotionen wie Freude, Traurigkeit oder Anspannung
-            ausdrücken.
-          </div>
-        </div>
+      <section id="musik">
+        <div class="section">
+    <h2>Was ist Musik?</h2>
+    <p>
+      <div>Musik ist die Kunst, Klänge und Stille in einer zeitlichen Abfolge so zu gestalten, </div>
+      <div>dass sie ästhetisch, emotional oder intellektuell wirkt. Sie kann Melodien, Harmonien, </div>
+      <div>Rhythmen und Texte enthalten und dient der Unterhaltung, Kommunikation, </div> 
+      <div>Ritualisierung oder dem Ausdruck von Gefühlen.</div>
+    </p>
+    <p>
+      Musik begleitet den Menschen seit Jahrhunderten und ist in allen Kulturen und Gesellschaften 
+      präsent. Sie kann unterschiedliche Stimmungen erzeugen, Erinnerungen wecken oder Geschichten 
+      erzählen.
+    </p>
+
+    <h3>Wann ist Musik entstanden?</h3>
+    <p>
+      <div>Die Entstehung von Musik lässt sich nicht genau datieren, da sie sehr früh in der Geschichte </div>
+     <div>der Menschheit existierte. Archäologische Funde wie Flöten aus Knochen oder Stein, die bis </div> 
+    <div>  zu 40.000 Jahre alt sind, zeigen, dass schon früh Menschen musizierten.</div>
+    </p>
+    <p>
+     <div>Musik entwickelte sich vermutlich aus dem natürlichen Bedürfnis des Menschen, Rhythmen zu </div> 
+      <div>  erzeugen, sich auszudrücken oder gemeinsame Handlungen wie Tänze und Rituale zu begleiten. </div>
+      <div>Über Jahrtausende entstanden aus einfachen Klängen komplexe Musiktraditionen in allen Kulturen.</div> 
+    </p>
+    <p>
+     <div>Heute gibt es eine unglaubliche Vielfalt an Musikstilen – von klassischer Musik über </div> 
+      <div>Volksmusik bis hin zu modernen Genres wie Pop, Hip-Hop oder elektronischer Musik.</div>
+    </p>
+  </div>
       </section>
 
       <section id="note">
