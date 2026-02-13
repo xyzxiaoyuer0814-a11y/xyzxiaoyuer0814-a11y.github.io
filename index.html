@@ -22,7 +22,7 @@
         background: linear-gradient(
           45deg,
           white,
-          rgb(0, 255, 225),
+          rgb(0, 253, 225),
           rgb(0, 0, 193),
           rgb(61, 0, 147),
           purple
@@ -94,10 +94,6 @@
         margin: 0;
       }
 
-      br {
-        height: 5px;
-      }
-
       nav {
         position: fixed;
         z-index: 100;
@@ -133,37 +129,41 @@
       h2 {
         color: #8a0d0d;
       }
-#famous_pieces a {
-  color: transparent;
-  text-decoration: none;
-  padding: 1rem;
+      #famous_pieces a {
+        color: transparent;
+        text-decoration: none;
+        padding: 1rem;
 
-  background-image: linear-gradient(
-    90deg,
-    hsl(176, 100%, 39%),
-    hsl(295, 100%, 36%),
-    hsl(176, 100%, 39%)
-  );
+        background-image: linear-gradient(
+          90deg,
+          hsl(176, 100%, 39%),
+          hsl(295, 100%, 36%),
+          hsl(176, 100%, 39%)
+        );
 
-  background-size: 200% 100%;
-  background-position: left;
-  background-clip: text;
+        background-size: 200% 100%;
+        background-position: left;
+        background-clip: text;
 
-  transition: background-position 0.75s;
-}
+        transition: background-position 0.75s;
+      }
 
-#famous_pieces a:hover {
-  background-position: right;
-}
+      #famous_pieces a:hover {
+        background-position: right;
+      }
 
-    
       audio {
         border: 100px solid red;
         color: white;
         background-color: #fff;
       }
-   
-   </style>
+      .barok_klassik {
+        width: 50%;
+      }
+      .romantik {
+        width: 50%;
+      }
+    </style>
   </head>
 
   <body>
@@ -180,35 +180,68 @@
 
       <section id="musik">
         <div class="section">
-    <h2>Was ist Musik?</h2>
-    <p>
-      <div>Musik ist die Kunst, Klänge und Stille in einer zeitlichen Abfolge so zu gestalten, </div>
-      <div>dass sie ästhetisch, emotional oder intellektuell wirkt. Sie kann Melodien, Harmonien, </div>
-      <div>Rhythmen und Texte enthalten und dient der Unterhaltung, Kommunikation, </div> 
-      <div>Ritualisierung oder dem Ausdruck von Gefühlen.</div>
-    </p>
-    <p>
-      Musik begleitet den Menschen seit Jahrhunderten und ist in allen Kulturen und Gesellschaften 
-      präsent. Sie kann unterschiedliche Stimmungen erzeugen, Erinnerungen wecken oder Geschichten 
-      erzählen.
-    </p>
+          <h2>Was ist Musik?</h2>
+          <div>
+            <div>
+              Musik ist die Kunst, Klänge und Stille in einer zeitlichen Abfolge
+              so zu gestalten,
+            </div>
+            <div>
+              dass sie ästhetisch, emotional oder intellektuell wirkt. Sie kann
+              Melodien, Harmonien,
+            </div>
+            <div>
+              Rhythmen und Texte enthalten und dient der Unterhaltung,
+              Kommunikation,
+            </div>
+            <div>Ritualisierung oder dem Ausdruck von Gefühlen.</div>
+          </div>
+          <div>
+            Musik begleitet den Menschen seit Jahrhunderten und ist in allen
+            Kulturen und Gesellschaften präsent. Sie kann unterschiedliche
+            Stimmungen erzeugen, Erinnerungen wecken oder Geschichten erzählen.
+          </div>
 
-    <h3>Wann ist Musik entstanden?</h3>
-    <p>
-      <div>Die Entstehung von Musik lässt sich nicht genau datieren, da sie sehr früh in der Geschichte </div>
-     <div>der Menschheit existierte. Archäologische Funde wie Flöten aus Knochen oder Stein, die bis </div> 
-    <div>  zu 40.000 Jahre alt sind, zeigen, dass schon früh Menschen musizierten.</div>
-    </p>
-    <p>
-     <div>Musik entwickelte sich vermutlich aus dem natürlichen Bedürfnis des Menschen, Rhythmen zu </div> 
-      <div>  erzeugen, sich auszudrücken oder gemeinsame Handlungen wie Tänze und Rituale zu begleiten. </div>
-      <div>Über Jahrtausende entstanden aus einfachen Klängen komplexe Musiktraditionen in allen Kulturen.</div> 
-    </p>
-    <p>
-     <div>Heute gibt es eine unglaubliche Vielfalt an Musikstilen – von klassischer Musik über </div> 
-      <div>Volksmusik bis hin zu modernen Genres wie Pop, Hip-Hop oder elektronischer Musik.</div>
-    </p>
-  </div>
+          <h3>Wann ist Musik entstanden?</h3>
+          <div>
+            <div>
+              Die Entstehung von Musik lässt sich nicht genau datieren, da sie
+              sehr früh in der Geschichte
+            </div>
+            <div>
+              der Menschheit existierte. Archäologische Funde wie Flöten aus
+              Knochen oder Stein, die bis
+            </div>
+            <div>
+              zu 40.000 Jahre alt sind, zeigen, dass schon früh Menschen
+              musizierten.
+            </div>
+          </div>
+          <div>
+            <div>
+              Musik entwickelte sich vermutlich aus dem natürlichen Bedürfnis
+              des Menschen, Rhythmen zu
+            </div>
+            <div>
+              erzeugen, sich auszudrücken oder gemeinsame Handlungen wie Tänze
+              und Rituale zu begleiten.
+            </div>
+            <div>
+              Über Jahrtausende entstanden aus einfachen Klängen komplexe
+              Musiktraditionen in allen Kulturen.
+            </div>
+          </div>
+          <div>
+            <div>
+              Heute gibt es eine unglaubliche Vielfalt an Musikstilen – von
+              klassischer Musik über
+            </div>
+            <div>
+              Volksmusik bis hin zu modernen Genres wie Pop, Hip-Hop oder
+              elektronischer Musik.
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="note">
@@ -400,450 +433,548 @@
       <section id="komponisten">
         <h2 class="h2">KOMPONISTEN</h2>
 
-        <div class="komponisten_barock">
-          <h2>Barock</h2>
-          <h3>Antonio Vivaldi (1678–1741)</h3>
-          <div>Antonio Vivaldi war ein italienischer Barockkomponist.</div>
-          <div>Er war Geiger, Lehrer und Priester.</div>
-          <div>Er schrieb zahlreiche Violinkonzerte.</div>
-          <div>Die Vier Jahreszeiten sind seine bekanntesten Werke.</div>
+        <h3>Barock</h3>
 
-          <h3>Johann Sebastian Bach (1685–1750)</h3>
-          <div>Johann Sebastian Bach war ein deutscher Barockkomponist.</div>
-          <div>
-            Er gilt als Meister der Polyphonie und der Fugenkomposition.
-          </div>
-          <div>
-            Seine Musik verbindet mathematische Ordnung mit tiefem Ausdruck.
-          </div>
-          <div>
-            Viele seiner Werke sind bis heute zentral für die Musikgeschichte.
-          </div>
-          <h3>George Frideric Handel (1685–1759)</h3>
-          <div>
-            George Frideric Handel war ein deutsch-britischer Komponist.
-          </div>
-          <div>Er komponierte Opern, Oratorien und Instrumentalmusik.</div>
-          <div>Seine Musik ist festlich und kraftvoll.</div>
-          <div>Der Messias ist eines seiner bekanntesten Werke.</div>
+        <h4>Claudio Monteverdi (1567–1643)</h4>
+        <div>
+          Monteverdi war ein italienischer Komponist der frühen Barockzeit.
         </div>
-        <div class="komponisten_klassik">
-          <h2>Klassik</h2>
-          <h3>Joseph Haydn (1732–1809)</h3>
-          <div>
-            Joseph Haydn war ein österreichischer Komponist der Wiener Klassik.
-          </div>
-          <div>
-            Er entwickelte die Sinfonie und das Streichquartett maßgeblich
-            weiter.
-          </div>
-          <div>
-            Sein Stil ist klar strukturiert, ausgewogen und oft humorvoll.
-          </div>
-          <div>Haydn beeinflusste Mozart und Beethoven stark.</div>
+        <div>Er gilt als Wegbereiter der Oper.</div>
+        <div>Sein berühmtestes Werk ist „L’Orfeo“.</div>
+        <div>Er verband Musik und Text besonders ausdrucksstark.</div>
+        <div>Er leitete den Übergang von Renaissance zum Barock ein.</div>
+        <div>Seine Werke beeinflussten die gesamte Operngeschichte.</div>
 
-          <h3>Wolfgang Amadeus Mozart (1756–1791)</h3>
-          <div>Mozart war ein musikalisches Genie der Wiener Klassik.</div>
-          <div>
-            Er komponierte Opern, Sinfonien, Kammermusik und Klavierwerke.
-          </div>
-          <div>Seine Musik verbindet Leichtigkeit mit großer Tiefe.</div>
-          <div>Viele seiner Werke gelten als vollkommen gestaltet.</div>
+        <h4>Antonio Vivaldi (1678–1741)</h4>
+        <div>Vivaldi war ein italienischer Barockkomponist und Geiger.</div>
+        <div>Er schrieb über 500 Konzerte.</div>
+        <div>Sein berühmtestes Werk ist „Die vier Jahreszeiten“.</div>
+        <div>Seine Musik ist lebendig und rhythmisch klar.</div>
+        <div>Er prägte das Solokonzert entscheidend.</div>
+        <div>Sein Stil beeinflusste viele spätere Komponisten.</div>
 
-          <h3>Ludwig van Beethoven (1770–1827)</h3>
-          <div>Beethoven war ein deutscher Komponist und Pianist.</div>
-          <div>Er bildete die Brücke zwischen Klassik und Romantik.</div>
-          <div>Seine Musik ist kraftvoll, emotional und oft dramatisch.</div>
-          <div>
-            Er veränderte die Musik dauerhaft und revolutionierte die Sinfonie.
-          </div>
+        <h4>Johann Sebastian Bach (1685–1750)</h4>
+        <div>Bach war ein deutscher Meister des Barock.</div>
+        <div>Er gilt als Meister der Fuge und Polyphonie.</div>
+        <div>Berühmt sind die „Brandenburgischen Konzerte“.</div>
+        <div>Seine Musik verbindet Struktur und Emotion.</div>
+        <div>Er schrieb geistliche und weltliche Werke.</div>
+        <div>Sein Einfluss reicht bis in die Moderne.</div>
+
+        <h4>Georg Friedrich Händel (1685–1759)</h4>
+        <div>Händel war ein deutsch-britischer Komponist.</div>
+        <div>Er schrieb Opern und Oratorien.</div>
+        <div>Sein bekanntestes Werk ist „Der Messias“.</div>
+        <div>Seine Musik wirkt feierlich und kraftvoll.</div>
+        <div>Er war international sehr erfolgreich.</div>
+        <div>Er prägte die englische Musiktradition stark.</div>
+
+        <h3>Klassik</h3>
+
+        <h4>Joseph Haydn (1732–1809)</h4>
+        <div>Haydn war ein bedeutender Vertreter der Wiener Klassik.</div>
+        <div>Er entwickelte Sinfonie und Streichquartett weiter.</div>
+        <div>Berühmt ist die „Sinfonie mit dem Paukenschlag“.</div>
+        <div>Sein Stil ist klar und ausgewogen.</div>
+        <div>Er beeinflusste Mozart und Beethoven.</div>
+        <div>Er wird als „Vater der Sinfonie“ bezeichnet.</div>
+
+        <h4>Wolfgang Amadeus Mozart (1756–1791)</h4>
+        <div>Mozart war ein musikalisches Wunderkind.</div>
+        <div>Er komponierte Opern, Sinfonien und Klavierwerke.</div>
+        <div>„Eine kleine Nachtmusik“ ist weltbekannt.</div>
+        <div>Seine Musik verbindet Leichtigkeit und Tiefe.</div>
+        <div>Er schrieb über 600 Werke.</div>
+        <div>Er gilt als Genie der Klassik.</div>
+
+        <h4>Ludwig van Beethoven (1770–1827)</h4>
+        <div>Beethoven bildete die Brücke zur Romantik.</div>
+        <div>Seine Musik ist kraftvoll und revolutionär.</div>
+        <div>Berühmt ist die „9. Sinfonie“.</div>
+        <div>Er erweiterte die Form der Sinfonie.</div>
+        <div>Er komponierte trotz zunehmender Taubheit.</div>
+        <div>Sein Einfluss ist bis heute spürbar.</div>
+
+        <h4>Romantik</h4>
+        <h4>Franz Schubert (1797–1828)</h4>
+        <div>Schubert war ein österreichischer Romantiker.</div>
+        <div>Er ist besonders für seine Lieder bekannt.</div>
+        <div>„Erlkönig“ gehört zu seinen berühmtesten Werken.</div>
+        <div>Seine Musik ist lyrisch und gefühlvoll.</div>
+        <div>Er schrieb über 600 Lieder.</div>
+        <div>Seine Melodien sind besonders eingängig.</div>
+
+        <h4>Felix Mendelssohn Bartholdy (1809–1847)</h4>
+        <div>Mendelssohn war ein deutscher Komponist der Romantik.</div>
+        <div>Er verband klassische Formen mit romantischem Ausdruck.</div>
+        <div>Sein bekanntestes Werk ist der „Hochzeitsmarsch“.</div>
+        <div>Auch die „Italienische Sinfonie“ ist sehr berühmt.</div>
+        <div>Er war zudem ein bedeutender Dirigent.</div>
+        <div>Mendelssohn trug zur Wiederentdeckung Bachs bei.</div>
+
+        <h4>Frédéric Chopin (1810–1849)</h4>
+        <div>Chopin komponierte fast nur für Klavier.</div>
+        <div>Sein Stil ist virtuos und poetisch.</div>
+        <div>Berühmt ist der „Trauermarsch“.</div>
+        <div>Er prägte die Klaviermusik nachhaltig.</div>
+        <div>Seine Werke sind technisch anspruchsvoll.</div>
+        <div>Er gilt als Dichter des Klaviers.</div>
+
+        <h4>Franz Liszt (1811–1886)</h4>
+        <div>Liszt war ein berühmter Klaviervirtuose.</div>
+        <div>Er entwickelte die sinfonische Dichtung.</div>
+        <div>Bekannt ist „Liebestraum Nr. 3“.</div>
+        <div>Seine Werke sind technisch extrem anspruchsvoll.</div>
+        <div>Er revolutionierte das Klavierspiel.</div>
+        <div>Er war europaweit gefeiert.</div>
+
+        <h4>Johann Strauss II (1825–1899)</h4>
+        <div>Johann Strauss II war ein österreichischer Komponist.</div>
+        <div>Er ist als „Walzerkönig“ bekannt.</div>
+        <div>Sein berühmtestes Werk ist „An der schönen blauen Donau“.</div>
+        <div>Auch die Operette „Die Fledermaus“ ist weltberühmt.</div>
+        <div>Er machte den Wiener Walzer international populär.</div>
+        <div>Seine Musik steht für Eleganz und Lebensfreude.</div>
+
+        <h4>Johannes Brahms (1833–1897)</h4>
+        <div>Brahms verband Klassik und Romantik.</div>
+        <div>Seine „Ungarischen Tänze“ sind sehr bekannt.</div>
+        <div>Er schrieb vier bedeutende Sinfonien.</div>
+        <div>Sein Stil ist strukturiert und tiefgründig.</div>
+        <div>Er war ein großer Bewunderer Bachs.</div>
+        <div>Er zählt zu den wichtigsten Romantikern.</div>
+
+        <h4>Pjotr Iljitsch Tschaikowski (1840–1893)</h4>
+        <div>Tschaikowski war ein russischer Komponist.</div>
+        <div>Er schrieb berühmte Ballette.</div>
+        <div>„Schwanensee“ ist weltberühmt.</div>
+        <div>Seine Musik ist emotional und dramatisch.</div>
+        <div>Er komponierte sechs Sinfonien.</div>
+        <div>Sein Stil ist melodisch und kraftvoll.</div>
+
+        <h4>Edvard Grieg (1843–1907)</h4>
+        <div>Grieg war Norwegens bekanntester Komponist.</div>
+        <div>Er nutzte nordische Volksmusik.</div>
+        <div>Berühmt ist die „Peer-Gynt-Suite“.</div>
+        <div>„In der Halle des Bergkönigs“ ist sehr populär.</div>
+        <div>Seine Musik ist atmosphärisch.</div>
+        <div>Er prägte die nationale Romantik.</div>
+
+        <h3>Spät Romantik</h3>
+
+        <h4>Gustav Mahler (1860–1911)</h4>
+        <div>Mahler war Komponist und Dirigent.</div>
+        <div>Er schrieb monumentale Sinfonien.</div>
+        <div>Berühmt ist seine Sinfonie Nr. 5.</div>
+        <div>Seine Musik verbindet Tragik und Ironie.</div>
+        <div>Er beeinflusste die Moderne stark.</div>
+        <div>Seine Werke sind emotional intensiv.</div>
+
+        <h4>Richard Strauss (1864–1949)</h4>
+        <div>Strauss schrieb Opern und sinfonische Dichtungen.</div>
+        <div>Berühmt ist „Also sprach Zarathustra“.</div>
+        <div>Er nutzte große Orchesterbesetzungen.</div>
+        <div>Sein Stil ist klanglich opulent.</div>
+        <div>Er war international erfolgreich.</div>
+        <div>Er prägte die Spätromantik.</div>
+
+        <h4>Erik Satie (1866–1925)</h4>
+        <div>Satie war ein französischer Komponist.</div>
+        <div>Bekannt ist die „Gymnopédie Nr. 1“.</div>
+        <div>Seine Musik ist ruhig und minimalistisch.</div>
+        <div>Er beeinflusste Debussy und Ravel.</div>
+        <div>Er setzte auf Einfachheit statt Virtuosität.</div>
+        <div>Er gilt als Wegbereiter moderner Musik.</div>
+
+        <h4>Sergei Rachmaninow (1873–1943)</h4>
+        <div>Rachmaninow war Komponist und Pianist.</div>
+        <div>Sein berühmtestes Werk ist das 2. Klavierkonzert.</div>
+        <div>Sein Stil ist romantisch und emotional.</div>
+        <div>Er schrieb virtuose Klavierwerke.</div>
+        <div>Er emigrierte später in die USA.</div>
+        <div>Seine Musik ist bis heute sehr beliebt.</div>
+
+        <h4>Sergei Prokofjew (1891–1953)</h4>
+        <div>Prokofjew war ein russischer Komponist.</div>
+        <div>Berühmt ist „Peter und der Wolf“.</div>
+        <div>Er schrieb auch das Ballett „Romeo und Julia“.</div>
+        <div>Sein Stil ist rhythmisch und kraftvoll.</div>
+        <div>Er verband Moderne mit Tradition.</div>
+        <div>
+          Er gehört zu den wichtigsten Komponisten des 20. Jahrhunderts.
         </div>
-        <div class="komponisten_Romantik">
-          <h2>Romantik</h2>
-          <h3>Franz Schubert (1797–1828)</h3>
-          <div>
-            Franz Schubert war ein österreichischer Komponist der Romantik.
-          </div>
-          <div>Er ist besonders für seine Lieder und Liederzyklen bekannt.</div>
-          <div>Seine Musik ist lyrisch, persönlich und emotional.</div>
-          <div>
-            Schubert verband einfache Melodik mit großer Ausdruckskraft.
-          </div>
 
-          <h3>Felix Mendelssohn Bartholdy (1809–1847)</h3>
-          <div>Felix Mendelssohn war ein deutscher romantischer Komponist.</div>
-          <div>Er verband klassische Formen mit romantischem Ausdruck.</div>
-          <div>Er war außerdem ein bedeutender Dirigent.</div>
-          <div>Seine Musik ist klar, elegant und ausdrucksstark.</div>
+        <h3>Impressionismus</h3>
+        <h4>Maurice Ravel (1875–1937)</h4>
+        <div>Ravel war ein französischer Komponist.</div>
+        <div>Sein berühmtestes Werk ist der „Boléro“.</div>
+        <div>Er war Meister der Orchestrierung.</div>
+        <div>Seine Musik ist elegant und präzise.</div>
+        <div>Er wird oft dem Impressionismus zugeordnet.</div>
+        <div>Seine Werke sind technisch raffiniert.</div>
 
-          <h3>Frédéric Chopin (1810–1849)</h3>
-          <div>Chopin war ein polnischer Komponist der Romantik.</div>
-          <div>Er schrieb fast ausschließlich für Klavier.</div>
-          <div>Sein Stil ist lyrisch, virtuos und emotional.</div>
-          <div>Er prägte die Klaviermusik wie kaum ein anderer Komponist.</div>
-
-          <h3>Robert Schumann (1810–1856)</h3>
-          <div>Robert Schumann war ein deutscher romantischer Komponist.</div>
-          <div>Seine Musik spiegelt starke innere Gefühle wider.</div>
-          <div>Er komponierte Klavierwerke, Lieder und Sinfonien.</div>
-          <div>
-            Schumann verband Literatur und Musik auf einzigartige Weise.
-          </div>
-
-          <h3>Franz Liszt (1811–1886)</h3>
-          <div>
-            Franz Liszt war ein ungarischer Komponist und Klaviervirtuose.
-          </div>
-          <div>Er war berühmt für seine außergewöhnliche Technik.</div>
-          <div>Liszt entwickelte die sinfonische Dichtung.</div>
-          <div>
-            Seine Werke sind technisch und musikalisch sehr anspruchsvoll.
-          </div>
-
-          <h3>Johannes Brahms (1833–1897)</h3>
-          <div>Johannes Brahms war ein deutscher romantischer Komponist.</div>
-          <div>Er verband klassische Formen mit romantischer Tiefe.</div>
-          <div>Er schrieb Sinfonien, Kammermusik und Klavierwerke.</div>
-          <div>
-            Brahms ist einer der bedeutendsten Komponisten des 19. Jahrhunderts.
-          </div>
-
-          <h3>Pjotr Iljitsch Tschaikowski (1840–1893)</h3>
-          <div>Tschaikowski war ein russischer Komponist der Romantik.</div>
-          <div>Er schrieb Sinfonien, Ballette und Konzerte.</div>
-          <div>Seine Musik ist stark emotional.</div>
-          <div>Schwanensee und Der Nussknacker sind weltberühmt.</div>
+        <h4>Claude Debussy (1862–1918)</h4>
+        <div>
+          Claude Debussy war ein französischer Komponist des Impressionismus.
         </div>
-
-        <div class="komponisten_spätromantik">
-          <h2>Spätromantik</h2>
-          <h3>Richard Wagner (1813–1883)</h3>
-          <div>
-            Richard Wagner war ein deutscher Komponist der Spätromantik.
-          </div>
-          <div>Er reformierte die Oper grundlegend.</div>
-          <div>Seine Werke sind als Musikdramen konzipiert.</div>
-          <div>
-            Der Ring des Nibelungen ist eines seiner bekanntesten Werke.
-          </div>
-
-          <h3>Richard Strauss (1864–1949)</h3>
-          <div>
-            Richard Strauss war ein deutscher Komponist der Spätromantik.
-          </div>
-          <div>Er schrieb sinfonische Dichtungen und Opern.</div>
-          <div>Seine Musik verwendet sehr große Orchester.</div>
-          <div>Er hatte großen Einfluss auf die moderne Musik.</div>
-
-          <h3>Sergei Rachmaninow (1873–1943)</h3>
-          <div>
-            Sergei Rachmaninow war ein russischer Komponist und Pianist.
-          </div>
-          <div>Seine Musik gehört zur Spätromantik.</div>
-          <div>Er schrieb berühmte Klavierkonzerte und Sinfonien.</div>
-          <div>Sein Stil ist emotional, kraftvoll und hoch ausdrucksstark.</div>
-
-          <h2>Impressionismus</h2>
-          <h3>Claude Debussy (1862–1918)</h3>
-          <div>Claude Debussy war ein französischer Komponist.</div>
-          <div>
-            Er gilt als Hauptvertreter des musikalischen Impressionismus.
-          </div>
-          <div>
-            Seine Musik legt großen Wert auf Klangfarben und Stimmungen.
-          </div>
-          <div>Debussy löste sich bewusst von klassischen Harmonien.</div>
-        </div>
+        <div>Er löste sich bewusst von traditionellen Harmonien.</div>
+        <div>Seine Musik legt großen Wert auf Klangfarben und Atmosphäre.</div>
+        <div>Sein berühmtestes Werk ist „Clair de Lune“.</div>
+        <div>Auch „Prélude à l’après-midi d’un faune“ ist sehr bekannt.</div>
+        <div>Debussy beeinflusste die Musik des 20. Jahrhunderts stark.</div>
       </section>
 
+  
       <section id="famous_pieces">
         <h2>Berühmte Stücke</h2>
-        <h3>Johann Sebastian Bach</h3>
+
+        <h3>Barock</h3>
+
+        <h4>Antonio Vivaldi</h4>
         <ul>
           <li>
-            <a href="https://youtu.be/gVah1cr3pU0"
-              >Das Wohltemperierte Klavier Nr. 1</a
+            <a href="https://youtu.be/mFWQgxXM_b8"
+              >Die vier Jahreszeiten – Frühling</a
             >
-            Level (Prälude: 4 Fugue 9 )
           </li>
           <li>
-            <a href="https://youtu.be/zWjDPRSTRa0?si=3M1fG-u_9cqP5jIn"
-              >Das Wohltemperierte Klavier Nr. 8</a
+            <a href="https://youtu.be/muowVV_ITKc"
+              >Die vier Jahreszeiten – Sommer</a
             >
-            Level (Prälude: 7 Fugue 9 )
           </li>
           <li>
-            <a href="https://youtu.be/INfgHUn-y0I">
-              Das Wohltemperierte Klavier Nr. 3</a
+            <a href="https://youtu.be/Z21_VpNipfg"
+              >Die vier Jahreszeiten – Herbst</a
             >
-            Level (Prälude: 8 Fugue 9 )
           </li>
           <li>
-            <a href="https://youtu.be/o3aI7Oo3GMo?si=rwDtSEjp_J_NNDfk"
-              >Toccata and Fugue BWV 565</a
+            <a href="https://youtu.be/TZCfydWF48c"
+              >Die vier Jahreszeiten – Winter</a
             >
-            level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/ghTitIMtTCM?si=DZJkT6ErSDRtW35q"
-              >Italian Concerto BWV 971</a
-            >
-            Level 7
           </li>
         </ul>
 
-        <h3>Ludwig van Beethoven</h3>
+        <h4>Johann Sebastian Bach</h4>
         <ul>
           <li>
-            <a href="https://youtu.be/s71I_EWJk7I">Für Elise</a> – level 4
+            <a href="https://youtu.be/gVah1cr3pU0"
+              >Wohltemperiertes Klavier Nr. 1</a
+            >
+            – Level (Prälude 4 / Fuge 9)
+          </li>
+          <li>
+            <a href="https://youtu.be/INfgHUn-y0I"
+              >Wohltemperiertes Klavier Nr. 3</a
+            >
+            – Level (Prälude 8 / Fuge 9)
+          </li>
+          <li>
+            <a href="https://youtu.be/zWjDPRSTRa0"
+              >Wohltemperiertes Klavier Nr. 8</a
+            >
+            – Level (Prälude 7 / Fuge 9)
+          </li>
+          <li>
+            <a href="https://youtu.be/ghTitIMtTCM"
+              >Italienisches Konzert BWV 971</a
+            >
+            – Level 7
+          </li>
+          <li>
+            <a href="https://youtu.be/Czsd13Mmcg0"
+              >Brandenburgisches Konzert Nr. 3</a
+            >
+          </li>
+          <li>
+            <a href="https://youtu.be/gIgqeA76cdU"
+              >Brandenburgisches Konzert Nr. 5</a
+            >
+          </li>
+          <li>
+            <a href="https://youtu.be/o3aI7Oo3GMo">Toccata und Fuge BWV 565</a>
+            – Level 7
+          </li>
+        </ul>
+
+        <h3>Klassik</h3>
+
+        <h4>Wolfgang Amadeus Mozart</h4>
+        <ul>
+          <li><a href="https://youtu.be/7BTvoqVK420">12 Variationen</a></li>
+          <li>
+            <a href="https://youtu.be/N8cTsnx8hkY">Sonate KV 545</a> – Level 5
+          </li>
+          <li>
+            <a href="https://youtu.be/FZ1mj9IaczQ">Sonate KV 331</a> – Level 6
+          </li>
+          <li>
+            <a href="https://youtu.be/uWYmUZTYE78">Rondo alla Turca</a> – Level
+            5
+          </li>
+          <li>
+            <a href="https://youtu.be/GaQ4L5mfku0">Sonate KV 570</a> – Level 6
+          </li>
+          <li>
+            <a href="https://youtu.be/MNfz2ZKtB_A">Sonate KV 576</a> – Level 7
+          </li>
+          <li>
+            <a href="https://youtu.be/oTS1fohQNec">Sonate KV 333</a> – Level 7
+          </li>
+          <li>
+            <a href="https://youtu.be/nNeXg_JQnpA">Fantasie d-Moll K397</a> –
+            Level 7
+          </li>
+          <li><a href="https://youtu.be/VIItKRaP2vc">KV 448</a> – Level 8</li>
+          <li>
+            <a href="https://youtu.be/nPbxIT9W1AY">Eine kleine Nachtmusik</a>
+          </li>
+          <li>
+            <a href="https://youtu.be/8OZCyp-LcGw">Die Hochzeit des Figaro</a>
+          </li>
+          <li><a href="https://youtu.be/k1-TrAvp_xs">Lacrimosa</a></li>
+        </ul>
+
+        <h4>Ludwig van Beethoven</h4>
+        <ul>
+          <li>
+            <a href="https://youtu.be/s71I_EWJk7I">Für Elise</a> – Level 4
+          </li>
+          <li>
+            <a href="https://youtu.be/SrcOcKYQX3c">Pathétique</a> – Level 9
+          </li>
+          <li>
+            <a href="https://youtu.be/4591dCHe_sE">Mondscheinsonate</a> – Level
+            9
+          </li>
+          <li>
+            <a href="https://youtu.be/co6nWmswipo">Sonate Op. 31 Nr. 2</a> –
+            Level 8
+          </li>
+          <li>
+            <a href="https://youtu.be/5q72vXcAW0o">Waldstein</a> – Level 10
+          </li>
+          <li>
+            <a href="https://youtu.be/0Ak_7tTxZrk">Appassionata</a> – Level 10
           </li>
           <li><a href="https://youtu.be/fuPrcnpIRx8">Sinfonie Nr. 5</a></li>
+          <li><a href="https://youtu.be/Zv4PIFRpYcw">Sinfonie Nr. 6</a></li>
           <li><a href="https://youtu.be/gT91esZK90I">Sinfonie Nr. 9</a></li>
+        </ul>
+
+        <h3>Romantik</h3>
+
+        <h4>Franz Schubert</h4>
+        <ul>
           <li>
-            <a href="https://youtu.be/4591dCHe_sE?si=VB1ppB8JGFLtj20E"
-              >Mondschein
-            </a>
-            – level 9
+            <a href="https://youtu.be/AJN-JnBBEGE">Impromptu Nr. 1</a> – Level 7
           </li>
           <li>
-            <a href="https://youtu.be/0Ak_7tTxZrk?si=g_oP31blYLmManIM"
-              >Appassionata</a
-            >
-            – level 10
+            <a href="https://youtu.be/L4B1IJmjsyo">Impromptu Nr. 2</a> – Level 8
           </li>
           <li>
-            <a href="https://youtu.be/SrcOcKYQX3c">Pathétique</a> – level 9
+            <a href="https://youtu.be/FxhbAGwEYGQ">Impromptu Nr. 3</a> – Level 7
           </li>
           <li>
-            <a href="https://youtu.be/co6nWmswipo?si=Fbh4QikFW32SpRVY"
-              >Klaviersonate Op. 31 Nr. 2</a
-            >
-            – level 8
+            <a href="https://youtu.be/_OxsFdxmbso">Impromptu Nr. 4</a> – Level 8
           </li>
           <li>
-            <a href="https://youtu.be/5q72vXcAW0o?si=_QJcpxEmnLNS5twW"
-              >Waldstein" Piano Sonata Nr. 21</a
-            >
+            <a href="https://youtu.be/A5_uAD1npUY">Moment Musical Nr. 3</a>
+          </li>
+          <li>
+            <a href="https://youtu.be/1FzP9LN-Q7s">Sonate Nr. 20</a> – Level 9
+          </li>
+          <li>
+            <a href="https://youtu.be/oCn0PjPHdrc">Sonate Nr. 21</a> – Level 9
+          </li>
+          <li><a href="https://youtu.be/OHkot1TmvZU">Sinfonie Nr. 5</a></li>
+          <li><a href="https://youtu.be/3tisvEpblig">Sinfonie Nr. 8</a></li>
+          <li><a href="https://youtu.be/lv5xPlm6etI">Ständchen</a></li>
+          <li><a href="https://youtu.be/JS91p-vmSf0">Erlkönig</a></li>
+        </ul>
+
+        <h4>Frédéric Chopin</h4>
+        <ul>
+          <li>
+            <a href="https://youtu.be/t-JD2bnNQvY">Nocturne op. 9 Nr. 1</a> –
+            Level 7
+          </li>
+          <li>
+            <a href="https://youtu.be/9E6b3swbnWg">Nocturne op. 9 Nr. 2</a> –
+            Level 7
+          </li>
+          <li><a href="https://youtu.be/DqpPRj6UZqc">Nocturne Nr. 20</a></li>
+          <li>
+            <a href="https://youtu.be/HVau-JRGirg">Raindrop Prelude</a> – Level
+            6
+          </li>
+          <li>
+            <a href="https://youtu.be/bzBH9Nm1BP8">Op. 10 Nr. 3 (Tristesse)</a>
+          </li>
+          <li>
+            <a href="https://youtu.be/ih1GydTN6gQ">Fantasie-Impromptu</a> –
+            Level 8
+          </li>
+          <li><a href="https://youtu.be/bzBH9Nm1BP8">Funeral March</a></li>
+          <li>
+            <a href="https://youtu.be/sGqaeUeTzj0">Prelude Op. 28 Nr. 8</a> –
+            Level 9
+          </li>
+          <li>
+            <a href="https://youtu.be/plHLfQ_QxKk">Scherzo Nr. 2</a> – Level 9
+          </li>
+          <li><a href="https://youtu.be/taY5oHleS4I">Ballade Nr. 1</a></li>
+          <li>
+            <a href="https://youtu.be/p_iI1J0bALE">Heroische Polonaise</a>
+          </li>
+          <li>
+            <a href="https://youtu.be/9E82wwNc7r8">Etüde Op. 10 Nr. 1</a> –
+            Level 10
+          </li>
+          <li>
+            <a href="https://youtu.be/7VWHBHeNrg4">Etüde Op. 10 Nr. 12</a> –
+            Level 10
+          </li>
+          <li>
+            <a href="https://youtu.be/gZjdAWgjLx8">Etüde Op. 25 Nr. 11</a> –
             Level 10
           </li>
         </ul>
 
-        <h3>Wolfgang Amadeus Mozart</h3>
+   
+
+        <h4>Franz Liszt</h4>
         <ul>
           <li>
-            <a href="https://youtu.be/N8cTsnx8hkY">Sonate KV 545</a> – level 5
+            <a href="https://youtu.be/MBOa-2b4uQQ">Liebestraum</a> – Level 7
           </li>
           <li>
-            <a href="https://youtu.be/GaQ4L5mfku0">Sonate KV 570</a> – level 6
-          </li>
-          <li>
-            <a href="https://youtu.be/MNfz2ZKtB_A">Sonate KV 576</a> – level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/nPbxIT9W1AY">Ein kleines Nachtmusik</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/uWYmUZTYE78">Rondo alla turca</a> – level
-            5
-          </li>
-          <li>
-            <a href="https://youtu.be/FZ1mj9IaczQ">Sonate KV 331</a> – level 6
-          </li>
-
-          <li>
-            <a href="https://youtu.be/oTS1fohQNec?si=IyniUCco9Q4ekI9v"
-              >Sonate KV 333</a
+            <a href="https://youtu.be/6oGEN7oS2z4"
+              >Ungarische Rhapsodie Nr. 2</a
             >
-            – level 7
+            – Level 10
           </li>
           <li>
-            <a href="https://youtu.be/k1-TrAvp_xs?si=J6ApbymJQU15yZUE"
-              >Lacrimosa</a
-            >
+            <a href="https://youtu.be/7Nv9ZOhmbO8">La Campanella</a> – Level 10
           </li>
-
-          <li>
-            <a href="https://youtu.be/VIItKRaP2vc?si=uPirMgcl936pWh69"
-              >KV448
-            </a>
-            level 8
-          </li>
-          <li>
-            <a href="https://youtu.be/nNeXg_JQnpA?si=QTkpKDFUQkqgXiSG"
-              >Fantasia d-minor K397 385g
-            </a>
-            level 7
-          </li>
+          <li><a href="https://youtu.be/Ifk5Swd8WHk">Feux Follets</a></li>
         </ul>
 
-        <h3>Frédéric Chopin</h3>
+        <h4>Pjotr Iljitsch Tschaikowski</h4>
         <ul>
           <li>
-            <a href="https://youtu.be/9E6b3swbnWg">Nocturne op. 9 Nr. 2</a> –
-            level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/t-JD2bnNQvY?si=Eu6fawXN7rd04OjC"
-              >Nocturne op. 9 Nr. 1</a
+            <a href="https://youtu.be/FACqt8cmF14"
+              >Nussknacker – Tanz der Zuckerfee</a
             >
-            – level 7
           </li>
           <li>
-            <a href="https://youtu.be/ih1GydTN6gQ?si=Xt3lQ9FdXlwPys-y"
-              >Fantasie-Impromptu</a
-            >
-            – level 8
+            <a href="https://youtu.be/hXcCwfymxaY">Nussknacker – Pas de Deux</a>
           </li>
-          <li>
-            <a href="https://youtu.be/7VWHBHeNrg4">Etüde op. 10 No. 12</a> –
-            level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/9E82wwNc7r8">Etüde op. 10 No. 1</a> –
-            level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/gZjdAWgjLx8">Etüde op. 25 No. 11</a> –
-            level 10
-          </li>
-
-          <li>
-            <a href="https://youtu.be/HVau-JRGirg?si=jI9JNFl5I-sG_yzm"
-              >Raindrop Prelude Op.28 No.15</a
-            >
-            – level 6
-          </li>
-          <li>
-            <a href="https://youtu.be/sGqaeUeTzj0?si=guBmg2Q28J7khe1v"
-              >Prelude Op.28 Nr.8</a
-            >
-            – level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/plHLfQ_QxKk?si=uhyKoRqfAxtd_Cng"
-              >Scherzo Nr.2</a
-            >
-            – level 9
-          </li>
+          <li><a href="https://youtu.be/rbWs2m8wdok">Schwanensee</a></li>
         </ul>
 
-        <h3>Franz Liszt</h3>
+        <h3>Impressionismus</h3>
+
+        <h4>Claude Debussy</h4>
         <ul>
+          <li><a href="https://youtu.be/cVYH-7QGE-A">Arabesque Nr. 1</a></li>
           <li>
-            <a href="https://youtu.be/MBOa-2b4uQQ">love dream</a> – level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/7Nv9ZOhmbO8">La Campanella</a> – level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/6oGEN7oS2z4">Hungarian Rhapsody Nr. 2</a>
-            – level 10
-          </li>
-        </ul>
-
-        <h3>Franz Schubert</h3>
-        <ul>
-          <li>
-            <a href="https://youtu.be/AJN-JnBBEGE">Impromptu Nr. 1</a> – level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/L4B1IJmjsyo">Impromptu Nr. 2</a> – level 8
-          </li>
-          <li>
-            <a href="https://youtu.be/FxhbAGwEYGQ">Impromptu Nr. 3</a> – level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/_OxsFdxmbso">Impromptu Nr. 4</a> – level 8
-          </li>
-
-          <li>
-            <a href="https://youtu.be/OHkot1TmvZU?si=2uksWaIuQjEbH3M0"
-              >Symphonie Nr.5</a
-            >
-          </li>
-
-          <li>
-            <a href="https://youtu.be/1FzP9LN-Q7s?si=qKvhA9knMue5Ek-a"
-              >Sonate Nr.20</a
-            >
-            – level 9
-          </li>
-
-          <li>
-            <a href="https://youtu.be/oCn0PjPHdrc?si=fifIGHVCsKp-t7Cj"
-              >Sonate Nr.21 – level 9</a
-            >
-          </li>
-        </ul>
-
-        <h3>Claude Debussy</h3>
-        <ul>
-          <li>
-            <a href="https://www.youtube.com/watch?v=CvFH_6DNRCY"
-              >Clair de Lune</a
-            >
-            – level 6
+            <a href="https://youtu.be/CvFH_6DNRCY">Clair de Lune</a> – Level 6
           </li>
           <li>
             <a href="https://youtu.be/Q64UJcKjFQE">Reflets dans l’eau</a> –
-            level 9
+            Level 9
           </li>
         </ul>
-
         <h3>Sonstiges</h3>
         <ul>
           <li>
-            <a href="https://youtu.be/AVGQSKXcfFY"
-              >Nikolai Rimsky-Korsakow – Hummelflug (schnell)</a
-            >
-            Level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/d8YwOM7gKZs"
-              >Nikolai Rimsky-Korsakow – (normal)</a
-            >
-            Level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/4rgSzQwe5DQ"
-              >Antonio Vivaldi – Die 4 Jahreszeiten</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/6jSLH9CDPPQ?si=FrceecbemMIaJ7OH"
-              >Johann Pachelbell: Kanon in D – level 5</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/6z82w0l6kwE?si=E0dStJPa9ODpMXU9"
-              >Schumann: Kinderszene Nr. 7 Träumerei – level 7</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/rbWs2m8wdok?si=SKiehSelurJU3t14"
-              >Pyotr Tchaikovsky: Schwanensee</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/2WfaotSK3mI?si=i9I6XuyFAvxlkp7n"
-              >Gymnopédie Nr. 1 Erik Satie</a
-            >
-            – level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n"></a
-            >Johann Strauss: Die schöne blaue Donau
-          </li>
-          <li>
-            <a href="https://youtu.be/sCtixpIWBto?si=_yPMm12ffeBw4_za"
-              >Rachmaninoff Prelude Op. 3 Nr. 2
+            <a href="https://youtu.be/6jSLH9CDPPQ?si=FrceecbemMIaJ7OH">
+              Johann Pachelbel – Kanon in D
             </a>
-            – level 8
+            – Level 5
           </li>
+
           <li>
-            <a href="https://youtu.be/aBZzTiBlpfs?si=i536Zd82PkBELUZP"
-              >Edward grieg: In the Hall of the Mountain King</a
-            >
+            <a href="https://youtu.be/6z82w0l6kwE?si=E0dStJPa9ODpMXU9">
+              Robert Schumann – Kinderszenen Nr. 7 „Träumerei“
+            </a>
+            – Level 7
+          </li>
+
+          <li>
+            <a href="https://youtu.be/2WfaotSK3mI?si=i9I6XuyFAvxlkp7n">
+              Erik Satie – Gymnopédie Nr. 1
+            </a>
+            – Level 7
+          </li>
+
+          <li>
+            <a href="https://youtu.be/sCtixpIWBto?si=_yPMm12ffeBw4_za">
+              Sergei Rachmaninoff – Prelude Op. 3 Nr. 2
+            </a>
+            – Level 8
+          </li>
+
+          <li>
+            <a href="https://youtu.be/d8YwOM7gKZs">
+              Nikolai Rimsky-Korsakow – Hummelflug (normal)
+            </a>
+            – Level 9
+          </li>
+
+          <li>
+            <a href="https://youtu.be/AVGQSKXcfFY">
+              Nikolai Rimsky-Korsakow – Hummelflug (schnell)
+            </a>
+            – Level 9
+          </li>
+
+          <li>
+            <a href="https://youtu.be/xOLQd_pUbxs?si=7N5N5HUDkpIULF8C">
+              Georg Friedrich Händel – Sarabande
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/HCDygl0pttM?si=36eZyBPB9p9rJc-d">
+              Johannes Brahms – Ungarischer Tanz Nr. 5
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/89jOPAGJq-M?si=ktJiUNyfJknH4d29">
+              Antonín Dvořák – Sinfonie Nr. 9 „Aus der Neuen Welt“
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/aBZzTiBlpfs?si=i536Zd82PkBELUZP">
+              Edvard Grieg – In der Halle des Bergkönigs
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/j3T8-aeOrbg?si=-SLGPcVYlcv-3rl3">
+              Gioachino Rossini – Wilhelm Tell Ouvertüre
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n">
+              Johann Strauss II – An der schönen blauen Donau
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/4Diu2N8TGKA?si=662du9dA5dbEmjjX">
+              Jacques Offenbach – Can Can
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/b44-5M4e9nI?si=FnPYcRTuzjGKgF69">
+              Camille Saint-Saëns – Der Schwan (Karneval der Tiere)
+            </a>
           </li>
         </ul>
       </section>
@@ -860,7 +991,6 @@
       let targetVolume = 0.6; // maximale Lautstärke
       let isStarted = false;
 
-      // 🎵 Start bei CLICK (Browser-sicher)
       document.addEventListener(
         "click",
         () => {
