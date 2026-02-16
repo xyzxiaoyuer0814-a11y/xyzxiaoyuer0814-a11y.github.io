@@ -10,14 +10,7 @@
         font-family: sans-serif;
         background: linear-gradient(45deg, gold, orange, red);
       }
-
-      h1 {
-        font-size: 100px;
-
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        font-weight: 900;
-        position: relative;
+      .title {
         bottom: 0px;
         background: linear-gradient(
           45deg,
@@ -27,7 +20,7 @@
           rgb(61, 0, 147),
           purple
         );
-        text-decoration: underline;
+        text-decoration: overline;
         text-shadow:
           0 0 30px #ffcc66,
           0 0 42px #ff9933,
@@ -41,6 +34,14 @@
 
         padding: 100px;
         border-bottom: solid #cc5500;
+      }
+      h1 {
+        font-size: 100px;
+        user-select: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-weight: 900;
+        position: relative;
       }
 
       section {
@@ -163,6 +164,39 @@
       .romantik {
         width: 50%;
       }
+      details {
+        font-size: 1rem;
+      }
+      details a {
+        color: #000;
+      }
+
+      summary {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      summary::before {
+        content: "+";
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      details[open] summary::before {
+        transform: rotate(45deg);
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
     </style>
   </head>
 
@@ -176,7 +210,9 @@
       <div></div>
     </nav>
     <main>
-      <h1>Musik</h1>
+      <div class="title">
+        <h1>Musik</h1>
+      </div>
 
       <section id="musik">
         <div class="section">
@@ -624,359 +660,404 @@
         <div>Debussy beeinflusste die Musik des 20. Jahrhunderts stark.</div>
       </section>
 
-  
       <section id="famous_pieces">
         <h2>Berühmte Stücke</h2>
 
         <h3>Barock</h3>
 
         <h4>Antonio Vivaldi</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/mFWQgxXM_b8"
-              >Die vier Jahreszeiten – Frühling</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/muowVV_ITKc"
-              >Die vier Jahreszeiten – Sommer</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/Z21_VpNipfg"
-              >Die vier Jahreszeiten – Herbst</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/TZCfydWF48c"
-              >Die vier Jahreszeiten – Winter</a
-            >
-          </li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/mFWQgxXM_b8"
+                >Die vier Jahreszeiten – Frühling</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/muowVV_ITKc"
+                >Die vier Jahreszeiten – Sommer</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/Z21_VpNipfg"
+                >Die vier Jahreszeiten – Herbst</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/TZCfydWF48c"
+                >Die vier Jahreszeiten – Winter</a
+              >
+            </li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h4>Johann Sebastian Bach</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/gVah1cr3pU0"
-              >Wohltemperiertes Klavier Nr. 1</a
-            >
-            – Level (Prälude 4 / Fuge 9)
-          </li>
-          <li>
-            <a href="https://youtu.be/INfgHUn-y0I"
-              >Wohltemperiertes Klavier Nr. 3</a
-            >
-            – Level (Prälude 8 / Fuge 9)
-          </li>
-          <li>
-            <a href="https://youtu.be/zWjDPRSTRa0"
-              >Wohltemperiertes Klavier Nr. 8</a
-            >
-            – Level (Prälude 7 / Fuge 9)
-          </li>
-          <li>
-            <a href="https://youtu.be/ghTitIMtTCM"
-              >Italienisches Konzert BWV 971</a
-            >
-            – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/Czsd13Mmcg0"
-              >Brandenburgisches Konzert Nr. 3</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/gIgqeA76cdU"
-              >Brandenburgisches Konzert Nr. 5</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/o3aI7Oo3GMo">Toccata und Fuge BWV 565</a>
-            – Level 7
-          </li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/gVah1cr3pU0"
+                >Wohltemperiertes Klavier Nr. 1</a
+              >
+              – Level (Prälude 4 / Fuge 9)
+            </li>
+            <li>
+              <a href="https://youtu.be/INfgHUn-y0I"
+                >Wohltemperiertes Klavier Nr. 3</a
+              >
+              – Level (Prälude 8 / Fuge 9)
+            </li>
+            <li>
+              <a href="https://youtu.be/zWjDPRSTRa0"
+                >Wohltemperiertes Klavier Nr. 8</a
+              >
+              – Level (Prälude 7 / Fuge 9)
+            </li>
+            <li>
+              <a href="https://youtu.be/ghTitIMtTCM"
+                >Italienisches Konzert BWV 971</a
+              >
+              – Level 7
+            </li>
+            <li>
+              <a href="https://youtu.be/Czsd13Mmcg0"
+                >Brandenburgisches Konzert Nr. 3</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/gIgqeA76cdU"
+                >Brandenburgisches Konzert Nr. 5</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/o3aI7Oo3GMo"
+                >Toccata und Fuge BWV 565</a
+              >
+              – Level 7
+            </li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h3>Klassik</h3>
 
         <h4>Wolfgang Amadeus Mozart</h4>
-        <ul>
-          <li><a href="https://youtu.be/7BTvoqVK420">12 Variationen</a></li>
-          <li>
-            <a href="https://youtu.be/N8cTsnx8hkY">Sonate KV 545</a> – Level 5
-          </li>
-          <li>
-            <a href="https://youtu.be/FZ1mj9IaczQ">Sonate KV 331</a> – Level 6
-          </li>
-          <li>
-            <a href="https://youtu.be/uWYmUZTYE78">Rondo alla Turca</a> – Level
-            5
-          </li>
-          <li>
-            <a href="https://youtu.be/GaQ4L5mfku0">Sonate KV 570</a> – Level 6
-          </li>
-          <li>
-            <a href="https://youtu.be/MNfz2ZKtB_A">Sonate KV 576</a> – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/oTS1fohQNec">Sonate KV 333</a> – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/nNeXg_JQnpA">Fantasie d-Moll K397</a> –
-            Level 7
-          </li>
-          <li><a href="https://youtu.be/VIItKRaP2vc">KV 448</a> – Level 8</li>
-          <li>
-            <a href="https://youtu.be/nPbxIT9W1AY">Eine kleine Nachtmusik</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/8OZCyp-LcGw">Die Hochzeit des Figaro</a>
-          </li>
-          <li><a href="https://youtu.be/k1-TrAvp_xs">Lacrimosa</a></li>
-        </ul>
+        <details>
+          <ul>
+            <li><a href="https://youtu.be/7BTvoqVK420">12 Variationen</a></li>
+            <li>
+              <a href="https://youtu.be/N8cTsnx8hkY">Sonate KV 545</a> – Level 5
+            </li>
+            <li>
+              <a href="https://youtu.be/FZ1mj9IaczQ">Sonate KV 331</a> – Level 6
+            </li>
+            <li>
+              <a href="https://youtu.be/uWYmUZTYE78">Rondo alla Turca</a> –
+              Level 5
+            </li>
+            <li>
+              <a href="https://youtu.be/GaQ4L5mfku0">Sonate KV 570</a> – Level 6
+            </li>
+            <li>
+              <a href="https://youtu.be/MNfz2ZKtB_A">Sonate KV 576</a> – Level 7
+            </li>
+            <li>
+              <a href="https://youtu.be/oTS1fohQNec">Sonate KV 333</a> – Level 7
+            </li>
+            <li>
+              <a href="https://youtu.be/nNeXg_JQnpA">Fantasie d-Moll K397</a> –
+              Level 7
+            </li>
+            <li><a href="https://youtu.be/VIItKRaP2vc">KV 448</a> – Level 8</li>
+            <li>
+              <a href="https://youtu.be/nPbxIT9W1AY">Eine kleine Nachtmusik</a>
+            </li>
+            <li>
+              <a href="https://youtu.be/8OZCyp-LcGw">Die Hochzeit des Figaro</a>
+            </li>
+            <li><a href="https://youtu.be/k1-TrAvp_xs">Lacrimosa</a></li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h4>Ludwig van Beethoven</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/s71I_EWJk7I">Für Elise</a> – Level 4
-          </li>
-          <li>
-            <a href="https://youtu.be/SrcOcKYQX3c">Pathétique</a> – Level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/4591dCHe_sE">Mondscheinsonate</a> – Level
-            9
-          </li>
-          <li>
-            <a href="https://youtu.be/co6nWmswipo">Sonate Op. 31 Nr. 2</a> –
-            Level 8
-          </li>
-          <li>
-            <a href="https://youtu.be/5q72vXcAW0o">Waldstein</a> – Level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/0Ak_7tTxZrk">Appassionata</a> – Level 10
-          </li>
-          <li><a href="https://youtu.be/fuPrcnpIRx8">Sinfonie Nr. 5</a></li>
-          <li><a href="https://youtu.be/Zv4PIFRpYcw">Sinfonie Nr. 6</a></li>
-          <li><a href="https://youtu.be/gT91esZK90I">Sinfonie Nr. 9</a></li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/s71I_EWJk7I">Für Elise</a> – Level 4
+            </li>
+            <li>
+              <a href="https://youtu.be/SrcOcKYQX3c">Pathétique</a> – Level 9
+            </li>
+            <li>
+              <a href="https://youtu.be/4591dCHe_sE">Mondscheinsonate</a> –
+              Level 9
+            </li>
+            <li>
+              <a href="https://youtu.be/co6nWmswipo">Sonate Op. 31 Nr. 2</a> –
+              Level 8
+            </li>
+            <li>
+              <a href="https://youtu.be/5q72vXcAW0o">Waldstein</a> – Level 10
+            </li>
+            <li>
+              <a href="https://youtu.be/0Ak_7tTxZrk">Appassionata</a> – Level 10
+            </li>
+            <li><a href="https://youtu.be/fuPrcnpIRx8">Sinfonie Nr. 5</a></li>
+            <li><a href="https://youtu.be/Zv4PIFRpYcw">Sinfonie Nr. 6</a></li>
+            <li><a href="https://youtu.be/gT91esZK90I">Sinfonie Nr. 9</a></li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h3>Romantik</h3>
 
         <h4>Franz Schubert</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/AJN-JnBBEGE">Impromptu Nr. 1</a> – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/L4B1IJmjsyo">Impromptu Nr. 2</a> – Level 8
-          </li>
-          <li>
-            <a href="https://youtu.be/FxhbAGwEYGQ">Impromptu Nr. 3</a> – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/_OxsFdxmbso">Impromptu Nr. 4</a> – Level 8
-          </li>
-          <li>
-            <a href="https://youtu.be/A5_uAD1npUY">Moment Musical Nr. 3</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/1FzP9LN-Q7s">Sonate Nr. 20</a> – Level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/oCn0PjPHdrc">Sonate Nr. 21</a> – Level 9
-          </li>
-          <li><a href="https://youtu.be/OHkot1TmvZU">Sinfonie Nr. 5</a></li>
-          <li><a href="https://youtu.be/3tisvEpblig">Sinfonie Nr. 8</a></li>
-          <li><a href="https://youtu.be/lv5xPlm6etI">Ständchen</a></li>
-          <li><a href="https://youtu.be/JS91p-vmSf0">Erlkönig</a></li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/AJN-JnBBEGE">Impromptu Nr. 1</a> – Level
+              7
+            </li>
+            <li>
+              <a href="https://youtu.be/L4B1IJmjsyo">Impromptu Nr. 2</a> – Level
+              8
+            </li>
+            <li>
+              <a href="https://youtu.be/FxhbAGwEYGQ">Impromptu Nr. 3</a> – Level
+              7
+            </li>
+            <li>
+              <a href="https://youtu.be/_OxsFdxmbso">Impromptu Nr. 4</a> – Level
+              8
+            </li>
+            <li>
+              <a href="https://youtu.be/A5_uAD1npUY">Moment Musical Nr. 3</a>
+            </li>
+            <li>
+              <a href="https://youtu.be/1FzP9LN-Q7s">Sonate Nr. 20</a> – Level 9
+            </li>
+            <li>
+              <a href="https://youtu.be/oCn0PjPHdrc">Sonate Nr. 21</a> – Level 9
+            </li>
+            <li><a href="https://youtu.be/OHkot1TmvZU">Sinfonie Nr. 5</a></li>
+            <li><a href="https://youtu.be/3tisvEpblig">Sinfonie Nr. 8</a></li>
+            <li><a href="https://youtu.be/lv5xPlm6etI">Ständchen</a></li>
+            <li><a href="https://youtu.be/JS91p-vmSf0">Erlkönig</a></li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h4>Frédéric Chopin</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/t-JD2bnNQvY">Nocturne op. 9 Nr. 1</a> –
-            Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/9E6b3swbnWg">Nocturne op. 9 Nr. 2</a> –
-            Level 7
-          </li>
-          <li><a href="https://youtu.be/DqpPRj6UZqc">Nocturne Nr. 20</a></li>
-          <li>
-            <a href="https://youtu.be/HVau-JRGirg">Raindrop Prelude</a> – Level
-            6
-          </li>
-          <li>
-            <a href="https://youtu.be/bzBH9Nm1BP8">Op. 10 Nr. 3 (Tristesse)</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/ih1GydTN6gQ">Fantasie-Impromptu</a> –
-            Level 8
-          </li>
-          <li><a href="https://youtu.be/bzBH9Nm1BP8">Funeral March</a></li>
-          <li>
-            <a href="https://youtu.be/sGqaeUeTzj0">Prelude Op. 28 Nr. 8</a> –
-            Level 9
-          </li>
-          <li>
-            <a href="https://youtu.be/plHLfQ_QxKk">Scherzo Nr. 2</a> – Level 9
-          </li>
-          <li><a href="https://youtu.be/taY5oHleS4I">Ballade Nr. 1</a></li>
-          <li>
-            <a href="https://youtu.be/p_iI1J0bALE">Heroische Polonaise</a>
-          </li>
-          <li>
-            <a href="https://youtu.be/9E82wwNc7r8">Etüde Op. 10 Nr. 1</a> –
-            Level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/7VWHBHeNrg4">Etüde Op. 10 Nr. 12</a> –
-            Level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/gZjdAWgjLx8">Etüde Op. 25 Nr. 11</a> –
-            Level 10
-          </li>
-        </ul>
-
-   
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/t-JD2bnNQvY">Nocturne op. 9 Nr. 1</a> –
+              Level 7
+            </li>
+            <li>
+              <a href="https://youtu.be/9E6b3swbnWg">Nocturne op. 9 Nr. 2</a> –
+              Level 7
+            </li>
+            <li><a href="https://youtu.be/DqpPRj6UZqc">Nocturne Nr. 20</a></li>
+            <li>
+              <a href="https://youtu.be/HVau-JRGirg">Raindrop Prelude</a> –
+              Level 6
+            </li>
+            <li>
+              <a href="https://youtu.be/bzBH9Nm1BP8"
+                >Op. 10 Nr. 3 (Tristesse)</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/ih1GydTN6gQ">Fantasie-Impromptu</a> –
+              Level 8
+            </li>
+            <li><a href="https://youtu.be/bzBH9Nm1BP8">Funeral March</a></li>
+            <li>
+              <a href="https://youtu.be/sGqaeUeTzj0">Prelude Op. 28 Nr. 8</a> –
+              Level 9
+            </li>
+            <li>
+              <a href="https://youtu.be/plHLfQ_QxKk">Scherzo Nr. 2</a> – Level 9
+            </li>
+            <li><a href="https://youtu.be/taY5oHleS4I">Ballade Nr. 1</a></li>
+            <li>
+              <a href="https://youtu.be/p_iI1J0bALE">Heroische Polonaise</a>
+            </li>
+            <li>
+              <a href="https://youtu.be/9E82wwNc7r8">Etüde Op. 10 Nr. 1</a> –
+              Level 10
+            </li>
+            <li>
+              <a href="https://youtu.be/7VWHBHeNrg4">Etüde Op. 10 Nr. 12</a> –
+              Level 10
+            </li>
+            <li>
+              <a href="https://youtu.be/gZjdAWgjLx8">Etüde Op. 25 Nr. 11</a> –
+              Level 10
+            </li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h4>Franz Liszt</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/MBOa-2b4uQQ">Liebestraum</a> – Level 7
-          </li>
-          <li>
-            <a href="https://youtu.be/6oGEN7oS2z4"
-              >Ungarische Rhapsodie Nr. 2</a
-            >
-            – Level 10
-          </li>
-          <li>
-            <a href="https://youtu.be/7Nv9ZOhmbO8">La Campanella</a> – Level 10
-          </li>
-          <li><a href="https://youtu.be/Ifk5Swd8WHk">Feux Follets</a></li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/MBOa-2b4uQQ">Liebestraum</a> – Level 7
+            </li>
+            <li>
+              <a href="https://youtu.be/6oGEN7oS2z4"
+                >Ungarische Rhapsodie Nr. 2</a
+              >
+              – Level 10
+            </li>
+            <li>
+              <a href="https://youtu.be/7Nv9ZOhmbO8">La Campanella</a> – Level
+              10
+            </li>
+            <li><a href="https://youtu.be/Ifk5Swd8WHk">Feux Follets</a></li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h4>Pjotr Iljitsch Tschaikowski</h4>
-        <ul>
-          <li>
-            <a href="https://youtu.be/FACqt8cmF14"
-              >Nussknacker – Tanz der Zuckerfee</a
-            >
-          </li>
-          <li>
-            <a href="https://youtu.be/hXcCwfymxaY">Nussknacker – Pas de Deux</a>
-          </li>
-          <li><a href="https://youtu.be/rbWs2m8wdok">Schwanensee</a></li>
-        </ul>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/FACqt8cmF14"
+                >Nussknacker – Tanz der Zuckerfee</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/hXcCwfymxaY"
+                >Nussknacker – Pas de Deux</a
+              >
+            </li>
+            <li><a href="https://youtu.be/rbWs2m8wdok">Schwanensee</a></li>
+          </ul>
+          <summary></summary>
+        </details>
 
         <h3>Impressionismus</h3>
 
         <h4>Claude Debussy</h4>
-        <ul>
-          <li><a href="https://youtu.be/cVYH-7QGE-A">Arabesque Nr. 1</a></li>
-          <li>
-            <a href="https://youtu.be/CvFH_6DNRCY">Clair de Lune</a> – Level 6
-          </li>
-          <li>
-            <a href="https://youtu.be/Q64UJcKjFQE">Reflets dans l’eau</a> –
-            Level 9
-          </li>
-        </ul>
+        <details>
+          <ul>
+            <li><a href="https://youtu.be/cVYH-7QGE-A">Arabesque Nr. 1</a></li>
+            <li>
+              <a href="https://youtu.be/CvFH_6DNRCY">Clair de Lune</a> – Level 6
+            </li>
+            <li>
+              <a href="https://youtu.be/Q64UJcKjFQE">Reflets dans l’eau</a> –
+              Level 9
+            </li>
+          </ul>
+          <summary></summary>
+        </details>
+
         <h3>Sonstiges</h3>
-        <ul>
-          <li>
-            <a href="https://youtu.be/6jSLH9CDPPQ?si=FrceecbemMIaJ7OH">
-              Johann Pachelbel – Kanon in D
-            </a>
-            – Level 5
-          </li>
+        <details>
+          <ul>
+            <li>
+              <a href="https://youtu.be/6jSLH9CDPPQ?si=FrceecbemMIaJ7OH">
+                Johann Pachelbel – Kanon in D
+              </a>
+              – Level 5
+            </li>
 
-          <li>
-            <a href="https://youtu.be/6z82w0l6kwE?si=E0dStJPa9ODpMXU9">
-              Robert Schumann – Kinderszenen Nr. 7 „Träumerei“
-            </a>
-            – Level 7
-          </li>
+            <li>
+              <a href="https://youtu.be/6z82w0l6kwE?si=E0dStJPa9ODpMXU9">
+                Robert Schumann – Kinderszenen Nr. 7 „Träumerei“
+              </a>
+              – Level 7
+            </li>
 
-          <li>
-            <a href="https://youtu.be/2WfaotSK3mI?si=i9I6XuyFAvxlkp7n">
-              Erik Satie – Gymnopédie Nr. 1
-            </a>
-            – Level 7
-          </li>
+            <li>
+              <a href="https://youtu.be/2WfaotSK3mI?si=i9I6XuyFAvxlkp7n">
+                Erik Satie – Gymnopédie Nr. 1
+              </a>
+              – Level 7
+            </li>
 
-          <li>
-            <a href="https://youtu.be/sCtixpIWBto?si=_yPMm12ffeBw4_za">
-              Sergei Rachmaninoff – Prelude Op. 3 Nr. 2
-            </a>
-            – Level 8
-          </li>
+            <li>
+              <a href="https://youtu.be/sCtixpIWBto?si=_yPMm12ffeBw4_za">
+                Sergei Rachmaninoff – Prelude Op. 3 Nr. 2
+              </a>
+              – Level 8
+            </li>
 
-          <li>
-            <a href="https://youtu.be/d8YwOM7gKZs">
-              Nikolai Rimsky-Korsakow – Hummelflug (normal)
-            </a>
-            – Level 9
-          </li>
+            <li>
+              <a href="https://youtu.be/d8YwOM7gKZs">
+                Nikolai Rimsky-Korsakow – Hummelflug (normal)
+              </a>
+              – Level 9
+            </li>
 
-          <li>
-            <a href="https://youtu.be/AVGQSKXcfFY">
-              Nikolai Rimsky-Korsakow – Hummelflug (schnell)
-            </a>
-            – Level 9
-          </li>
+            <li>
+              <a href="https://youtu.be/AVGQSKXcfFY">
+                Nikolai Rimsky-Korsakow – Hummelflug (schnell)
+              </a>
+              – Level 9
+            </li>
 
-          <li>
-            <a href="https://youtu.be/xOLQd_pUbxs?si=7N5N5HUDkpIULF8C">
-              Georg Friedrich Händel – Sarabande
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/xOLQd_pUbxs?si=7N5N5HUDkpIULF8C">
+                Georg Friedrich Händel – Sarabande
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/HCDygl0pttM?si=36eZyBPB9p9rJc-d">
-              Johannes Brahms – Ungarischer Tanz Nr. 5
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/HCDygl0pttM?si=36eZyBPB9p9rJc-d">
+                Johannes Brahms – Ungarischer Tanz Nr. 5
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/89jOPAGJq-M?si=ktJiUNyfJknH4d29">
-              Antonín Dvořák – Sinfonie Nr. 9 „Aus der Neuen Welt“
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/89jOPAGJq-M?si=ktJiUNyfJknH4d29">
+                Antonín Dvořák – Sinfonie Nr. 9 „Aus der Neuen Welt“
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/aBZzTiBlpfs?si=i536Zd82PkBELUZP">
-              Edvard Grieg – In der Halle des Bergkönigs
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/aBZzTiBlpfs?si=i536Zd82PkBELUZP">
+                Edvard Grieg – In der Halle des Bergkönigs
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/j3T8-aeOrbg?si=-SLGPcVYlcv-3rl3">
-              Gioachino Rossini – Wilhelm Tell Ouvertüre
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/j3T8-aeOrbg?si=-SLGPcVYlcv-3rl3">
+                Gioachino Rossini – Wilhelm Tell Ouvertüre
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n">
-              Johann Strauss II – An der schönen blauen Donau
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/DjsBV-wp4Qg?si=wgzpgQHjeG8E6m2n">
+                Johann Strauss II – An der schönen blauen Donau
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/4Diu2N8TGKA?si=662du9dA5dbEmjjX">
-              Jacques Offenbach – Can Can
-            </a>
-          </li>
+            <li>
+              <a href="https://youtu.be/4Diu2N8TGKA?si=662du9dA5dbEmjjX">
+                Jacques Offenbach – Can Can
+              </a>
+            </li>
 
-          <li>
-            <a href="https://youtu.be/b44-5M4e9nI?si=FnPYcRTuzjGKgF69">
-              Camille Saint-Saëns – Der Schwan (Karneval der Tiere)
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a href="https://youtu.be/b44-5M4e9nI?si=FnPYcRTuzjGKgF69">
+                Camille Saint-Saëns – Der Schwan (Karneval der Tiere)
+                (Background Musik)
+              </a>
+            </li>
+            <li>
+              <a href="https://youtu.be/0Oo4z37OUEI?si=QV2a7GcqW3GJCUIN"
+                >Mendelssohn: „Hochzeitsmarsch“</a
+              >
+            </li>
+          </ul>
+          <summary></summary>
+        </details>
       </section>
     </main>
 
@@ -986,9 +1067,8 @@
     <script>
       const audio = document.querySelector("#audio");
 
-      // Startwerte
-      audio.volume = 0; // für Fade-In
-      let targetVolume = 0.6; // maximale Lautstärke
+      audio.volume = 0;
+      let targetVolume = 0.6;
       let isStarted = false;
 
       document.addEventListener(
@@ -1003,7 +1083,6 @@
         { once: true },
       );
 
-      // 🎼 Sanftes Fade-In
       function fadeIn() {
         let v = 0;
         const fade = setInterval(() => {
@@ -1013,22 +1092,18 @@
         }, 50);
       }
 
-      // 🎚️ Lautstärke mit Scroll steuern
       document.addEventListener("wheel", (e) => {
         if (!isStarted) return;
 
         if (e.deltaY < 0) {
-          // scroll up → lauter
           targetVolume = Math.min(targetVolume + 0.01, 1);
         } else {
-          // scroll down → leiser
           targetVolume = Math.max(targetVolume - 0.01, 0.01);
         }
 
         audio.volume = targetVolume;
       });
 
-      // 👀 Pause wenn Tab nicht sichtbar
       document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
           audio.pause();
